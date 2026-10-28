@@ -1,1500 +1,311 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Mohamed E. Dabour: Computer Engineering student at Karabük University, graphic designer, Brazilian of Palestinian origin. Seeking a Summer 2027 internship.">
-  <title>Mohamed E. Dabour | Computer Engineer & Designer</title>
-  <style>
-    @font-face {
-      font-family: 'Bricolage Grotesque';
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url(assets/fonts/bricolage-grotesque-latin-800-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Bricolage Grotesque';
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url(assets/fonts/bricolage-grotesque-latin-ext-800-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Cinzel';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url(assets/fonts/cinzel-latin-700-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Cinzel';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url(assets/fonts/cinzel-latin-ext-700-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Cinzel';
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url(assets/fonts/cinzel-latin-800-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Cinzel';
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url(assets/fonts/cinzel-latin-ext-800-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Albert Sans';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url(assets/fonts/albert-sans-latin-600-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Albert Sans';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url(assets/fonts/albert-sans-latin-ext-600-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Albert Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url(assets/fonts/albert-sans-latin-700-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Albert Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url(assets/fonts/albert-sans-latin-ext-700-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Albert Sans';
-      font-style: normal;
-      font-weight: 900;
-      font-display: swap;
-      src: url(assets/fonts/albert-sans-latin-900-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Albert Sans';
-      font-style: normal;
-      font-weight: 900;
-      font-display: swap;
-      src: url(assets/fonts/albert-sans-latin-ext-900-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: url(assets/fonts/manrope-latin-500-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: url(assets/fonts/manrope-latin-ext-500-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url(assets/fonts/manrope-latin-700-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url(assets/fonts/manrope-latin-ext-700-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url(assets/fonts/manrope-latin-800-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url(assets/fonts/manrope-latin-ext-800-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Source Serif 4';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(assets/fonts/source-serif-4-latin-400-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Source Serif 4';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(assets/fonts/source-serif-4-latin-ext-400-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Source Serif 4';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url(assets/fonts/source-serif-4-latin-600-normal.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Source Serif 4';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url(assets/fonts/source-serif-4-latin-ext-600-normal.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    @font-face {
-      font-family: 'Source Serif 4';
-      font-style: italic;
-      font-weight: 400;
-      font-display: swap;
-      src: url(assets/fonts/source-serif-4-latin-400-italic.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }
-
-    @font-face {
-      font-family: 'Source Serif 4';
-      font-style: italic;
-      font-weight: 400;
-      font-display: swap;
-      src: url(assets/fonts/source-serif-4-latin-ext-400-italic.woff2) format('woff2');
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-    }
-
-    :root {
-      --navy: #08173a;
-      --char: #0e1118;
-      --paper: #f5f3ee;
-      --sky: #8fb6ff;
-      --serif: 'Bricolage Grotesque', 'Albert Sans', system-ui, sans-serif;
-      --white: #fff;
-      --ink: #0d1526;
-      --mute: #59647a;
-      --brass: #dcb56a;
-      --brassd: #946b1f;
-      --line: #d9dde6;
-      --dline: rgba(255, 255, 255, .14);
-      --dtext: #e8edf8;
-      --dmute: #b0bedd;
-      --name: 'Albert Sans', 'Manrope', system-ui, sans-serif;
-      --head: 'Manrope', system-ui, sans-serif;
-      --body: 'Source Serif 4', Georgia, serif
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-
-    body {
-      margin: 0;
-      font: 1.08rem/1.75 var(--body);
-      color: var(--ink);
-      background: var(--white);
-      overflow-x: hidden
-    }
-
-    a {
-      color: inherit
-    }
-
-    :focus-visible {
-      outline: 2px solid var(--brass);
-      outline-offset: 3px
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: var(--head);
-      margin: 0;
-      line-height: 1.05
-    }
-
-    p {
-      margin: 0 0 1em
-    }
-
-    .w {
-      width: min(1180px, 100% - 48px);
-      margin: auto
-    }
-
-    .glass {
-      background: rgba(255, 255, 255, .07);
-      border: 1px solid rgba(255, 255, 255, .2);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px)
-    }
-
-    .prog {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      width: 0;
-      background: var(--brass);
-      z-index: 20
-    }
-
-    .nav {
-      position: fixed;
-      inset: 0 0 auto;
-      z-index: 10;
-      background: rgba(10, 26, 58, .78);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--dline)
-    }
-
-    .nav .w {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 64px
-    }
-
-    .nav b {
-      font: 900 1.2rem var(--name);
-      color: #fff;
-      letter-spacing: -.02em
-    }
-
-    .nav nav {
-      display: flex;
-      align-items: center;
-      gap: 6px
-    }
-
-    .nav nav a {
-      font: 600 .92rem var(--name);
-      letter-spacing: .01em;
-      color: var(--dtext);
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 8px
-    }
-
-    .nav nav a:hover {
-      background: rgba(255, 255, 255, .1)
-    }
-
-    .nav nav a.cv {
-      background: var(--brass);
-      color: #1b1608;
-      font-weight: 700;
-      margin-left: 8px
-    }
-
-    .nav nav a.cv:hover {
-      background: #efcd8f
-    }
-
-    .btn {
-      display: inline-block;
-      font: 700 .95rem var(--head);
-      text-decoration: none;
-      padding: 14px 26px;
-      border-radius: 10px;
-      border: 1px solid var(--dline);
-      color: #fff;
-      transition: transform .2s, background .2s;
-      cursor: pointer
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      background: rgba(255, 255, 255, .1)
-    }
-
-    .btn.p {
-      background: var(--brass);
-      border-color: var(--brass);
-      color: #1b1608
-    }
-
-    .btn.p:hover {
-      background: #efcd8f
-    }
-
-    .btn.l {
-      color: var(--navy);
-      border-color: var(--navy)
-    }
-
-    .btn.l:hover {
-      background: var(--navy);
-      color: #fff
-    }
-
-    .hero {
-      position: relative;
-      background: linear-gradient(160deg, #0b2158, #08173a 55%, #050e26);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 110px 0 80px;
-      overflow: hidden
-    }
-
-    .ph {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 62%;
-      background: url(assets/me.jpg) 60% 28%/cover;
-      filter: grayscale(.35) contrast(1.05);
-      -webkit-mask-image: linear-gradient(90deg, transparent, #000 55%);
-      mask-image: linear-gradient(90deg, transparent, #000 55%)
-    }
-
-    .hero:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(45vw 45vw at 0 100%, rgba(47, 95, 208, .28), transparent 70%)
-    }
-
-    .hero .w {
-      position: relative
-    }
-
-    .greet {
-      font: 700 1.3rem var(--name);
-      color: var(--sky);
-      height: 1.8em;
-      direction: ltr;
-      text-align: left;
-      margin: 0 0 4px
-    }
-
-    .greet span {
-      transition: opacity .35s
-    }
-
-    .hero h1 {
-      font-family: var(--serif);
-      font-weight: 800;
-      font-size: clamp(3.6rem, 10.5vw, 9rem);
-      letter-spacing: -.055em;
-      line-height: .95;
-      margin-left: -.02em
-    }
-
-    .hero h1 span {
-      display: block
-    }
-
-    .hero h1 span+span {
-      color: var(--brass)
-    }
-
-    .role {
-      font: 700 clamp(1.05rem, 2vw, 1.35rem) var(--head);
-      margin: 26px 0 10px
-    }
-
-    .sum {
-      max-width: 30em;
-      color: var(--dtext);
-      margin-bottom: 30px
-    }
-
-    .cta {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap
-    }
-
-    .chips {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 34px
-    }
-
-    .chips span {
-      padding: 9px 16px;
-      border-radius: 99px;
-      font: 500 .86rem var(--head)
-    }
-
-    .chips i {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #6dffb0;
-      margin-right: 8px;
-      animation: pu 2s infinite
-    }
-
-    @keyframes pu {
-      50% {
-        opacity: .3
-      }
-    }
-
-    .trk {
-      position: absolute;
-      right: 0;
-      bottom: -20px;
-      width: 230px;
-      aspect-ratio: 1;
-      border-radius: 22px;
-      overflow: hidden;
-      touch-action: none
-    }
-
-    .bal {
-      position: absolute;
-      left: 68%;
-      top: 30%;
-      width: 20px;
-      height: 20px;
-      margin: -10px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 35% 30%, #fff, var(--brass));
-      box-shadow: 0 0 24px var(--brass);
-      animation: fl 4s ease-in-out infinite
-    }
-
-    @keyframes fl {
-      50% {
-        transform: translateY(-8px)
-      }
-    }
-
-    .ret {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 60px;
-      height: 60px;
-      margin: -30px;
-      border: 1.5px solid #fff;
-      border-radius: 50%;
-      pointer-events: none
-    }
-
-    .ret:before,
-    .ret:after {
-      content: "";
-      position: absolute;
-      background: #fff;
-      left: 50%;
-      top: 50%
-    }
-
-    .ret:before {
-      width: 1.5px;
-      height: 112%;
-      transform: translate(-50%, -50%)
-    }
-
-    .ret:after {
-      height: 1.5px;
-      width: 112%;
-      transform: translate(-50%, -50%)
-    }
-
-    .ret.lock {
-      border-color: var(--brass);
-      background: rgba(220, 181, 106, .22)
-    }
-
-    .out {
-      position: absolute;
-      left: 12px;
-      right: 12px;
-      bottom: 9px;
-      font: 500 .72rem/1.35 var(--head);
-      color: var(--dtext)
-    }
-
-    .facts {
-      background: var(--white);
-      border-bottom: 1px solid var(--line)
-    }
-
-    .facts .w {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr)
-    }
-
-    .fact {
-      padding: 34px 24px;
-      border-left: 1px solid var(--line)
-    }
-
-    .fact:first-child {
-      border-left: 0;
-      padding-left: 0
-    }
-
-    .fact b {
-      display: block;
-      font: 800 clamp(2rem, 4vw, 3rem)/1 var(--head);
-      letter-spacing: -.03em;
-      color: var(--navy)
-    }
-
-    .fact span {
-      font: 500 .88rem var(--head);
-      color: var(--mute)
-    }
-
-    .s {
-      padding: 120px 0
-    }
-
-    .dark {
-      background: linear-gradient(180deg, #0b2158, #07142f);
-      color: var(--dtext)
-    }
-
-    .char {
-      background: linear-gradient(180deg, #121722, #0b0e15);
-      color: var(--dtext)
-    }
-
-    .paper {
-      background: var(--paper)
-    }
-
-    .sec {
-      display: grid;
-      grid-template-columns: 4fr 8fr;
-      gap: clamp(36px, 6vw, 90px)
-    }
-
-    .sec>.hd {
-      position: sticky;
-      top: 100px;
-      align-self: start
-    }
-
-    h2 {
-      font-weight: 800;
-      font-size: clamp(2rem, 3.6vw, 3rem);
-      letter-spacing: -.035em;
-      margin-bottom: 18px
-    }
-
-    .hd p {
-      color: var(--mute);
-      font-size: 1rem
-    }
-
-    .dark .hd p,
-    .char .hd p {
-      color: var(--dmute)
-    }
-
-    .hd h2:after {
-      content: "";
-      display: block;
-      width: 48px;
-      height: 3px;
-      background: var(--brass);
-      margin-top: 20px
-    }
-
-    .rv {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity .7s, transform .7s
-    }
-
-    .rv.in {
-      opacity: 1;
-      transform: none
-    }
-
-    .tl {
-      position: relative;
-      padding-left: 36px
-    }
-
-    .tl:before {
-      content: "";
-      position: absolute;
-      left: 7px;
-      top: 8px;
-      bottom: 8px;
-      width: 2px;
-      background: var(--line)
-    }
-
-    .fill {
-      position: absolute;
-      left: 7px;
-      top: 8px;
-      width: 2px;
-      height: 0;
-      background: var(--brass)
-    }
-
-    .st {
-      position: relative;
-      padding-bottom: 34px
-    }
-
-    .st:last-child {
-      padding-bottom: 0
-    }
-
-    .st:before {
-      content: "";
-      position: absolute;
-      left: -36px;
-      top: 6px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: #fff;
-      border: 3px solid var(--brass)
-    }
-
-    .st small {
-      font: 700 .85rem var(--head);
-      color: var(--brassd)
-    }
-
-    .st h3 {
-      font-size: 1.35rem;
-      margin: 2px 0 6px;
-      color: var(--navy)
-    }
-
-    .st p {
-      margin: 0;
-      color: #3a4458
-    }
-
-    .quote {
-      font: italic 1.4rem/1.5 var(--body);
-      color: var(--navy);
-      margin: 0 0 26px;
-      padding: 6px 0 6px 22px;
-      border-left: 3px solid var(--brass)
-    }
-
-    .lg {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px
-    }
-
-    .lg div {
-      background: var(--navy);
-      color: #fff;
-      border-radius: 12px;
-      padding: 16px 10px;
-      text-align: center
-    }
-
-    .lg b {
-      display: block;
-      font: 800 1.25rem var(--head)
-    }
-
-    .lg span {
-      font-size: .8rem;
-      color: var(--dmute)
-    }
-
-    .row {
-      display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 26px;
-      padding: 28px 0;
-      border-top: 1px solid var(--dline)
-    }
-
-    .row:last-child {
-      border-bottom: 1px solid var(--dline)
-    }
-
-    .row small {
-      font: 700 .88rem var(--head);
-      color: var(--brass);
-      padding-top: 4px
-    }
-
-    .row h3 {
-      font-size: 1.25rem;
-      color: #fff;
-      margin-bottom: 6px
-    }
-
-    .row p {
-      margin: 0;
-      color: var(--dmute)
-    }
-
-    .pj {
-      background: rgba(255, 255, 255, .05);
-      border: 1px solid var(--dline);
-      border-radius: 18px;
-      padding: clamp(24px, 3.5vw, 42px);
-      margin-bottom: 28px
-    }
-
-    .pj h3 {
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      color: #fff;
-      letter-spacing: -.03em
-    }
-
-    .pj .k {
-      font: 700 .9rem var(--head);
-      color: var(--brass);
-      margin: 8px 0 16px
-    }
-
-    .sig {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 6px;
-      align-items: center;
-      margin: 20px 0;
-      font: 500 .84rem var(--head)
-    }
-
-    .sig span {
-      padding: 6px 12px;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, .08);
-      border: 1px solid var(--dline)
-    }
-
-    .sig i {
-      color: var(--brass);
-      font-style: normal
-    }
-
-    dl {
-      margin: 20px 0 0;
-      display: grid;
-      grid-template-columns: 130px 1fr;
-      gap: 12px 22px;
-      font-size: 1rem
-    }
-
-    dt {
-      font: 700 .88rem var(--head);
-      color: #fff;
-      padding-top: 3px
-    }
-
-    dd {
-      margin: 0;
-      color: var(--dmute)
-    }
-
-    .pj img {
-      display: block;
-      width: 100%;
-      border-radius: 12px;
-      margin-top: 24px;
-      border: 1px solid var(--dline)
-    }
-
-    .soon {
-      margin-top: 24px;
-      border: 1px dashed rgba(255, 255, 255, .25);
-      border-radius: 12px;
-      padding: 26px;
-      text-align: center;
-      color: var(--dmute);
-      font: 500 .92rem var(--head)
-    }
-
-    .tags {
-      margin: 18px 0 0;
-      font-size: .9rem;
-      color: var(--dmute)
-    }
-
-    .tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 28px
-    }
-
-    .tools span {
-      padding: 7px 14px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      font: 700 .84rem var(--head);
-      color: var(--navy);
-      background: #fff
-    }
-
-    .gal {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px
-    }
-
-    .pc {
-      margin: 0;
-      position: relative;
-      aspect-ratio: 1;
-      border-radius: 16px;
-      overflow: hidden;
-      background: #e6e8ee;
-      box-shadow: 0 14px 34px -18px rgba(10, 26, 58, .5)
-    }
-
-    .pc img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform .7s
-    }
-
-    .pc:hover img {
-      transform: scale(1.06)
-    }
-
-    .pc.ct img {
-      object-fit: contain;
-    }
-
-    .pc figcaption {
-      position: absolute;
-      inset: auto 0 0;
-      padding: 40px 18px 14px;
-      background: linear-gradient(0deg, rgba(10, 26, 58, .95), transparent);
-      color: #fff;
-      font: 500 .85rem/1.35 var(--head);
-      transform: translateY(8px);
-      opacity: 0;
-      transition: .4s
-    }
-
-    .pc:hover figcaption {
-      transform: none;
-      opacity: 1
-    }
-
-    .pc figcaption b {
-      display: block;
-      font-size: 1rem
-    }
-
-    .cr {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 20px;
-      align-items: center;
-      padding: 26px 0;
-      border-top: 1px solid var(--line);
-      text-decoration: none
-    }
-
-    .cr:last-of-type {
-      border-bottom: 1px solid var(--line)
-    }
-
-    .cr h3 {
-      font-size: 1.2rem;
-      color: var(--navy);
-      margin-bottom: 4px
-    }
-
-    .cr p {
-      margin: 0;
-      color: var(--mute);
-      font-size: .98rem
-    }
-
-    .cr span {
-      font: 700 .88rem var(--head);
-      color: var(--brassd)
-    }
-
-    .cr:hover h3 {
-      color: var(--brassd)
-    }
-
-    .ref {
-      margin-top: 36px;
-      background: var(--navy);
-      color: var(--dtext);
-      border-radius: 18px;
-      padding: 34px
-    }
-
-    .ref .quote {
-      color: #fff;
-      margin: 0 0 14px
-    }
-
-    .ref p {
-      color: var(--dmute)
-    }
-
-    .ct {
-      text-align: center
-    }
-
-    .ct h2 {
-      font-size: clamp(2.4rem, 6vw, 4.6rem);
-      color: #fff
-    }
-
-    .ct h2:after {
-      margin: 22px auto 0
-    }
-
-    .ct p {
-      color: var(--dmute);
-      max-width: 34em;
-      margin: 0 auto
-    }
-
-    .btns {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 34px
-    }
-
-    footer {
-      background: #0b0c10;
-      color: var(--dmute);
-      text-align: center;
-      padding: 26px;
-      font-size: .88rem
-    }
-
-    @media(max-width:900px) {
-
-      .sec,
-      .row {
-        grid-template-columns: 1fr
-      }
-
-      .sec>.hd {
-        position: static
-      }
-
-      .trk {
-        display: none
-      }
-
-      .ph {
-        width: 100%;
-        opacity: .45
-      }
-
-      .facts .w {
-        grid-template-columns: 1fr 1fr
-      }
-
-      .fact:nth-child(3) {
-        border-left: 0;
-        padding-left: 0
-      }
-
-      .gal {
-        grid-template-columns: 1fr
-      }
-
-      .lg {
-        grid-template-columns: 1fr 1fr
-      }
-
-      .nav nav a:not(.cv) {
-        display: none
-      }
-
-      dl {
-        grid-template-columns: 1fr
-      }
-
-      .row {
-        gap: 6px
-      }
-
-      .s {
-        padding: 84px 0
-      }
-    }
-
-    @media(prefers-reduced-motion:reduce) {
-      html {
-        scroll-behavior: auto
-      }
-
-      * {
-        animation: none !important;
-        transition: none !important
-      }
-
-      .rv {
-        opacity: 1;
-        transform: none
-      }
-    }
-  </style>
-  <link rel="icon" type="image/x-icon" href="assets/M.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mohamed E. Dabour: Computer Engineering student at Karabük University, graphic designer, Brazilian of Palestinian origin. Seeking a Summer 2027 internship.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<title>Mohamed E. Dabour | Computer Engineer & Designer</title>
+<style>
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/noto-sans-arabic-arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/noto-sans-arabic-arabic-500-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/noto-sans-arabic-arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/noto-sans-arabic-arabic-800-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/bricolage-grotesque-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/bricolage-grotesque-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/cinzel-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/cinzel-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/cinzel-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/cinzel-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Albert Sans';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/albert-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Albert Sans';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/albert-sans-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Albert Sans';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/albert-sans-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Albert Sans';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/albert-sans-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Albert Sans';font-style:normal;font-weight:900;font-display:swap;src:url(assets/fonts/albert-sans-latin-900-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Albert Sans';font-style:normal;font-weight:900;font-display:swap;src:url(assets/fonts/albert-sans-latin-ext-900-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/manrope-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/manrope-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/manrope-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/manrope-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/manrope-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/manrope-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/source-serif-4-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/source-serif-4-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/source-serif-4-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/source-serif-4-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/source-serif-4-latin-400-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/source-serif-4-latin-ext-400-italic.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--navy:#08173a;--char:#0e1118;--paper:#f5f3ee;--sky:#8fb6ff;--serif:'Noto Sans Arabic','Bricolage Grotesque','Albert Sans',system-ui,sans-serif;--white:#fff;--ink:#0d1526;--mute:#59647a;--brass:#dcb56a;--brassd:#946b1f;--line:#d9dde6;--dline:rgba(255,255,255,.14);--dtext:#e8edf8;--dmute:#b0bedd;--name:'Noto Sans Arabic','Albert Sans','Manrope',system-ui,sans-serif;--head:'Noto Sans Arabic','Manrope',system-ui,sans-serif;--body:'Noto Sans Arabic','Source Serif 4',Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:1.08rem/1.75 var(--body);color:var(--ink);background:var(--white);overflow-x:hidden}
+a{color:inherit}:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.05}p{margin:0 0 1em}
+.w{width:min(1180px,100% - 48px);margin:auto}
+.glass{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--brass);z-index:20}
+.btn{display:inline-block;font:700 .95rem var(--head);text-decoration:none;padding:14px 26px;border-radius:10px;border:1px solid var(--dline);color:#fff;transition:transform .2s,background .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.1)}.btn.p{background:var(--brass);border-color:var(--brass);color:#1b1608}.btn.p:hover{background:#efcd8f}
+.btn.l{color:var(--navy);border-color:var(--navy)}.btn.l:hover{background:var(--navy);color:#fff}
+.facts{background:var(--white);border-bottom:1px solid var(--line)}
+.facts .w{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:34px 24px;border-left:1px solid var(--line)}.fact:first-child{border-left:0;padding-left:0}
+.fact b{display:block;font:800 clamp(2rem,4vw,3rem)/1 var(--head);letter-spacing:-.03em;color:var(--navy)}.fact span{font:500 .88rem var(--head);color:var(--mute)}
+.s{padding:120px 0}.dark{background:linear-gradient(180deg,#0b2158,#07142f);color:var(--dtext)}.char{background:linear-gradient(180deg,#121722,#0b0e15);color:var(--dtext)}.paper{background:var(--paper)}
+.sec{display:grid;grid-template-columns:4fr 8fr;gap:clamp(36px,6vw,90px)}
+.sec>.hd{position:sticky;top:100px;align-self:start}
+h2{font-weight:800;font-size:clamp(2rem,3.6vw,3rem);letter-spacing:-.035em;margin-bottom:18px}
+.hd p{color:var(--mute);font-size:1rem}.dark .hd p,.char .hd p{color:var(--dmute)}
+.hd h2:after{content:"";display:block;width:48px;height:3px;background:var(--brass);margin-top:20px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.tl{position:relative;padding-left:36px}.tl:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.fill{position:absolute;left:7px;top:8px;width:2px;height:0;background:var(--brass)}
+.st{position:relative;padding-bottom:34px}.st:last-child{padding-bottom:0}
+.st:before{content:"";position:absolute;left:-36px;top:6px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--brass)}
+.st small{font:700 .85rem var(--head);color:var(--brassd)}.st h3{font-size:1.35rem;margin:2px 0 6px;color:var(--navy)}.st p{margin:0;color:#3a4458}
+.quote{font:italic 1.4rem/1.5 var(--body);color:var(--navy);margin:0 0 26px;padding:6px 0 6px 22px;border-left:3px solid var(--brass)}
+.lg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.lg div{background:var(--navy);color:#fff;border-radius:12px;padding:16px 10px;text-align:center}.lg b{display:block;font:800 1.25rem var(--head)}.lg span{font-size:.8rem;color:var(--dmute)}
+.row{display:grid;grid-template-columns:170px 1fr;gap:26px;padding:28px 0;border-top:1px solid var(--dline)}.row:last-child{border-bottom:1px solid var(--dline)}
+.row small{font:700 .88rem var(--head);color:var(--brass);padding-top:4px}.row h3{font-size:1.25rem;color:#fff;margin-bottom:6px}.row p{margin:0;color:var(--dmute)}
+.pj{background:rgba(255,255,255,.05);border:1px solid var(--dline);border-radius:18px;padding:clamp(24px,3.5vw,42px);margin-bottom:28px}
+.pj h3{font-size:clamp(1.6rem,3vw,2.2rem);color:#fff;letter-spacing:-.03em}.pj .k{font:700 .9rem var(--head);color:var(--brass);margin:8px 0 16px}
+.sig{display:flex;flex-wrap:wrap;gap:8px 6px;align-items:center;margin:20px 0;font:500 .84rem var(--head)}.sig span{padding:6px 12px;border-radius:8px;background:rgba(255,255,255,.08);border:1px solid var(--dline)}.sig i{color:var(--brass);font-style:normal}
+dl{margin:20px 0 0;display:grid;grid-template-columns:130px 1fr;gap:12px 22px;font-size:1rem}dt{font:700 .88rem var(--head);color:#fff;padding-top:3px}dd{margin:0;color:var(--dmute)}
+.pj img{display:block;width:100%;border-radius:12px;margin-top:24px;border:1px solid var(--dline)}
+.soon{margin-top:24px;border:1px dashed rgba(255,255,255,.25);border-radius:12px;padding:26px;text-align:center;color:var(--dmute);font:500 .92rem var(--head)}
+.tags{margin:18px 0 0;font-size:.9rem;color:var(--dmute)}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}.tools span{padding:7px 14px;border:1px solid var(--line);border-radius:8px;font:700 .84rem var(--head);color:var(--navy);background:#fff}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pc{margin:0;position:relative;aspect-ratio:1;border-radius:16px;overflow:hidden;background:#e6e8ee;box-shadow:0 14px 34px -18px rgba(10,26,58,.5)}
+.pc img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}.pc:hover img{transform:scale(1.06)}.pc.ct img{object-fit:contain}
+.pc figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 14px;background:linear-gradient(0deg,rgba(10,26,58,.95),transparent);color:#fff;font:500 .85rem/1.35 var(--head);transform:translateY(8px);opacity:0;transition:.4s}.pc:hover figcaption{transform:none;opacity:1}.pc figcaption b{display:block;font-size:1rem}
+.cr{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:26px 0;border-top:1px solid var(--line);text-decoration:none}.cr:last-of-type{border-bottom:1px solid var(--line)}
+.cr h3{font-size:1.2rem;color:var(--navy);margin-bottom:4px}.cr p{margin:0;color:var(--mute);font-size:.98rem}.cr span{font:700 .88rem var(--head);color:var(--brassd)}.cr:hover h3{color:var(--brassd)}
+.ref{margin-top:36px;background:var(--navy);color:var(--dtext);border-radius:18px;padding:34px}.ref .quote{color:#fff;margin:0 0 14px}.ref p{color:var(--dmute)}
+.ct{text-align:center}.ct h2{font-size:clamp(2.4rem,6vw,4.6rem);color:#fff}.ct h2:after{margin:22px auto 0}.ct p{color:var(--dmute);max-width:34em;margin:0 auto}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+footer{background:#0b0c10;color:var(--dmute);text-align:center;padding:26px;font-size:.88rem}
+.lsw{display:flex;gap:2px;margin-left:12px}.lsw button{background:none;border:1px solid transparent;color:var(--dtext);font:700 .78rem var(--name);padding:6px 9px;border-radius:7px;cursor:pointer}.lsw button:hover{background:rgba(255,255,255,.1)}.lsw button[aria-pressed=true]{border-color:var(--brass);color:var(--brass)}
+[dir=rtl] *{letter-spacing:0!important}
+[dir=rtl] .lsw{margin-left:0;margin-right:12px}[dir=rtl] .nav nav a.cv{margin-left:0;margin-right:8px}
+[dir=rtl] .ph{right:auto;left:0;-webkit-mask-image:linear-gradient(270deg,transparent,#000 55%);mask-image:linear-gradient(270deg,transparent,#000 55%)}
+[dir=rtl] .trk{right:auto;left:0}[dir=rtl] .greet{direction:rtl;text-align:right}
+[dir=rtl] .tl{padding-left:0;padding-right:36px}[dir=rtl] .tl:before,[dir=rtl] .fill{left:auto;right:7px}[dir=rtl] .st:before{left:auto;right:-36px}
+[dir=rtl] .quote{border-left:0;border-right:3px solid var(--brass);padding-left:0;padding-right:22px}
+@media(max-width:520px){.nav b{font-size:.95rem!important}.lsw{margin-left:6px}.lsw button{padding:6px 6px}}
+
+.nav{position:fixed;top:26px;left:50%;transform:translateX(-50%);z-index:10;width:min(1240px,100% - 56px);border-radius:26px;background:rgba(8,23,58,.55);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid rgba(255,255,255,.2);box-shadow:0 14px 40px -20px rgba(0,0,0,.6);transition:background .3s}
+.nav.sc{background:rgba(8,23,58,.92)}
+.nav .w{width:100%;margin:0;padding:0 22px;height:72px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font:800 1.15rem var(--name);letter-spacing:-.02em;white-space:nowrap}
+.mk{position:relative;display:grid;place-items:center;width:42px;height:42px;font:800 1.3rem var(--serif);letter-spacing:-.04em}
+.mk:before,.mk:after{content:"";position:absolute;width:13px;height:13px;border:2px solid #fff}
+.mk:before{top:0;left:0;border-right:0;border-bottom:0}.mk:after{bottom:0;right:0;border-left:0;border-top:0}
+.nav nav{display:flex;gap:4px;margin:0 auto}.nav nav a{font:500 .98rem var(--name);color:#fff;text-decoration:none;padding:9px 15px;border-radius:99px}.nav nav a:hover{background:rgba(255,255,255,.14)}
+.rt{display:flex;align-items:center;gap:10px}
+.lsw{margin:0;border:1.5px solid rgba(255,255,255,.6);border-radius:99px;padding:3px}
+.lsw button{border:0;border-radius:99px;padding:7px 11px;color:#fff}.lsw button[aria-pressed=true]{background:rgba(255,255,255,.22);color:#fff}
+.cv{font:700 .92rem var(--name);background:var(--brass);color:#1b1608;text-decoration:none;padding:10px 20px;border-radius:99px}.cv:hover{background:#efcd8f}
+
+.hero{position:relative;background:linear-gradient(160deg,#0b2158,#08173a 55%,#050e26);color:#fff;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
+.ph{position:absolute;top:0;right:0;bottom:0;width:62%;background:url(assets/me.jpg) 60% 28%/cover;filter:grayscale(.35) contrast(1.05);-webkit-mask-image:linear-gradient(90deg,transparent,#000 55%);mask-image:linear-gradient(90deg,transparent,#000 55%)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(45vw 45vw at 0 100%,rgba(47,95,208,.28),transparent 70%)}
+.hero .w{position:relative}
+.greet{font:700 1.3rem var(--name);color:var(--sky);height:1.8em;direction:ltr;text-align:left;margin:0 0 4px}.greet span{transition:opacity .35s}
+.hero h1{font-weight:800;font-size:clamp(3.6rem,10.5vw,9rem);letter-spacing:-.055em;line-height:.95}.hero h1 span{display:block}.hero h1 span+span{color:var(--brass)}
+.role{font:700 clamp(1.05rem,2vw,1.35rem) var(--head);margin:26px 0 10px}
+.sum{max-width:30em;color:var(--dtext);margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}.chips span{padding:9px 16px;border-radius:99px;font:500 .86rem var(--head)}
+.chips i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#6dffb0;margin-right:8px;animation:pu 2s infinite}@keyframes pu{50%{opacity:.3}}
+.soc{display:flex;gap:28px;margin-top:30px}
+.soc a{color:#fff;display:grid;place-items:center;width:30px;height:30px;opacity:.92;transition:transform .2s,color .2s}.soc a:hover{transform:translateY(-3px);color:var(--brass)}
+.soc svg{width:26px;height:26px;fill:currentColor}.soc b{font:800 1.45rem var(--name);letter-spacing:-.03em}
+.trk{position:absolute;right:0;bottom:-20px;width:230px;aspect-ratio:1;border-radius:22px;overflow:hidden;touch-action:none}
+.bal{position:absolute;left:68%;top:30%;width:20px;height:20px;margin:-10px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--brass));box-shadow:0 0 24px var(--brass);animation:fl 4s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-8px)}}
+.ret{position:absolute;left:0;top:0;width:60px;height:60px;margin:-30px;border:1.5px solid #fff;border-radius:50%;pointer-events:none}
+.ret:before,.ret:after{content:"";position:absolute;background:#fff;left:50%;top:50%}.ret:before{width:1.5px;height:112%;transform:translate(-50%,-50%)}.ret:after{height:1.5px;width:112%;transform:translate(-50%,-50%)}
+.ret.lock{border-color:var(--brass);background:rgba(220,181,106,.22)}
+.out{position:absolute;left:12px;right:12px;bottom:9px;font:500 .72rem/1.35 var(--head);color:var(--dtext)}
+@media(max-width:900px){.nav{top:14px;width:calc(100% - 28px)}.nav nav{display:none}.rt{margin-left:auto}}
+@media(max-width:640px){.brand span:last-child{display:none}}
+@media(max-width:900px){.sec,.row{grid-template-columns:1fr}.sec>.hd{position:static}.trk{display:none}.ph{width:100%;opacity:.45}.facts .w{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0;padding-left:0}.gal{grid-template-columns:1fr}.lg{grid-template-columns:1fr 1fr}.nav nav a:not(.cv){display:none}dl{grid-template-columns:1fr}.row{gap:6px}.s{padding:84px 0}}
+html.lt .hero>*:not(.ph),html.lt .facts,html.lt main,html.lt footer,html.lt .nav .w{transition:opacity var(--t,.3s) ease,transform var(--t,.3s) cubic-bezier(.3,.7,.2,1),filter var(--t,.3s) ease}
+html.lo .hero>*:not(.ph),html.lo .facts,html.lo main,html.lo footer,html.lo .nav .w{opacity:0;transform:translateX(var(--dx,0))}
+html.lo .hero>*:not(.ph),html.lo .nav .w{filter:blur(6px)}
+html.nt .hero>*:not(.ph),html.nt .facts,html.nt main,html.nt footer,html.nt .nav .w{transition:none!important}
+.lsw button{transition:background .3s,color .3s}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
 </head>
-
 <body>
-  <div class="prog" id="prog"></div>
-  <div class="nav">
-    <div class="w"><b>Mohamed E. Dabour</b>
-      <nav aria-label="Main"><a href="#story">Story</a><a href="#path">Experience</a><a href="#work">Projects</a><a
-          href="#design">Design</a><a href="#proof">Certificates</a><a href="#contact">Contact</a><a class="cv" href="#"
-          data-cv>CV</a></nav>
-    </div>
+<div class="prog" id="prog"></div>
+<div class="nav"><div class="w"><a class="brand" href="#top" aria-label="Mohamed E. Dabour"><span class="mk">md</span><span>Mohamed E. Dabour</span></a><nav aria-label="Main"><a href="#story">Story</a><a href="#path">Experience</a><a href="#work">Projects</a><a href="#design">Design</a><a href="#proof">Certificates</a><a href="#contact">Contact</a></nav><div class="rt"><div class="lsw" role="group" aria-label="Language"><button type="button" data-l="en">EN</button><button type="button" data-l="pt">PT</button><button type="button" data-l="ar" lang="ar">عربي</button><button type="button" data-l="tr">TR</button></div><a class="cv" href="assets/Mohamed_D_CV.docx" download="Mohamed_D_CV.docx" data-cv>CV</a></div></div></div>
+
+<header class="hero" id="top">
+  <div class="ph" role="img" aria-label="Mohamed at the Karabük University gate in winter"></div>
+  <div class="w">
+    <div class="greet" aria-hidden="true"><span id="hi">Hello</span></div>
+    <h1><span>Mohamed E.</span><span>Dabour</span></h1>
+    <p class="role">Computer Engineering student and graphic designer</p>
+    <p class="sum">Brazilian of Palestinian roots, building embedded and web systems at Karabük University, and designing the brands around them.</p>
+    <div class="cta"><a class="btn p" href="#work">View my work</a><a class="btn" href="#contact">Contact</a></div>
+    <div class="chips"><span class="glass"><i></i>Open to a Summer 2027 internship</span><span class="glass">Karabük University, year 3</span></div>
+    <div class="soc">
+    <a href="https://www.linkedin.com/in/mohamedeyaddabour/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg></a>
+    <a href="https://github.com/mohamedeyaddabour" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+    <a href="https://www.behance.net/mohameddabour_" target="_blank" rel="noopener" aria-label="Behance"><b>Bē</b></a>
   </div>
-
-  <header class="hero">
-    <div class="ph" role="img" aria-label="Mohamed at the Karabük University gate in winter"></div>
-    <div class="w">
-      <div class="greet" aria-hidden="true"><span id="hi">Hello</span></div>
-      <h1><span>Mohamed E.</span><span>Dabour</span></h1>
-      <p class="role">Computer Engineering student and graphic designer</p>
-      <p class="sum">Brazilian of Palestinian roots, building embedded and web systems at Karabük University, and
-        designing the brands around them.</p>
-      <div class="cta"><a class="btn p" href="#work">View my work</a><a class="btn" href="#contact">Contact</a></div>
-      <div class="chips"><span class="glass"><i></i>Open to a Summer 2027 internship</span><span class="glass">Karabük
-          University, year 3</span></div>
-      <div class="trk glass" id="trk" aria-label="Interactive demo: a reticle follows your cursor to a target">
-        <div class="bal" id="bal"></div>
-        <div class="ret" id="ret"></div>
-        <div class="out" id="out">Move your cursor here. My turret does this 140+ times a second.</div>
-      </div>
-    </div>
-  </header>
-
-  <div class="facts">
-    <div class="w">
-      <div class="fact"><b data-count="3.59">3.59</b><span>GPA out of 4.00</span></div>
-      <div class="fact"><b>4</b><span>Languages, all fluent</span></div>
-      <div class="fact"><b>2028</b><span>Expected graduation</span></div>
-      <div class="fact"><b>2027</b><span>Summer internship goal</span></div>
-    </div>
+    <div class="trk glass" id="trk" aria-label="Interactive demo: a reticle follows your cursor to a target"><div class="bal" id="bal"></div><div class="ret" id="ret"></div><div class="out" id="out">Move your cursor here. My turret does this 140+ times a second.</div></div>
   </div>
+</header>
 
-  <main>
-    <section id="story" class="s">
-      <div class="w sec">
-        <div class="hd">
-          <h2>My story</h2>
-          <p>Several countries' worth of change, one steady habit: listen to what people need, then build it.</p>
-        </div>
-        <div>
-          <div class="quote rv">Outside the house it was one life. Inside it was another. Both were mine.</div>
-          <p class="rv">I grew up holding two languages and two worlds at once, and they changed every few years. That
-            taught me to adapt fast, explain the same idea in different ways, and stay calm when the ground moves. It's
-            the habit I bring to engineering and to design.</p>
-          <div class="tl" id="tl" style="margin-top:34px">
-            <div class="fill" id="fill"></div>
-            <div class="st rv"><small>Roots</small>
-              <h3>Khan Younis, Gaza</h3>
-              <p>My family is from Khan Younis in Palestine, a part of me no change of address ever touched.</p>
-            </div>
-            <div class="st rv"><small>Until 2013</small>
-              <h3>Born in Libya</h3>
-              <p>My first years, in a home where my father, a computer engineer, was always building or fixing
-                something.</p>
-            </div>
-            <div class="st rv"><small>2013 to 2023</small>
-              <h3>São Paulo, Brazil</h3>
-              <p>I grew up in Brazil and graduated from the Escola Islâmica Brasileira. I took my first IT job while
-                still in high school.</p>
-            </div>
-            <div class="st rv"><small>2023</small>
-              <h3>Türkiye</h3>
-              <p>I came to Karabük, spent a year learning Turkish, and chose Türkiye for its strong religious community
-                and technological momentum.</p>
-            </div>
-            <div class="st rv"><small>Now</small>
-              <h3>Engineering, design and service</h3>
-              <p>Studying Computer Engineering, designing brands, and serving on the student team of the Palestinian
-                Students Union.</p>
-            </div>
-          </div>
-          <div class="lg rv" style="margin-top:40px">
-            <div><b>Português</b><span>Fluent</span></div>
-            <div><b>English</b><span>Fluent</span></div>
-            <div><b lang="ar" dir="rtl">العربية</b><span>Fluent</span></div>
-            <div><b>Türkçe</b><span>Fluent</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="facts"><div class="w">
+  <div class="fact"><b data-count="3.59">3.59</b><span>GPA out of 4.00</span></div>
+  <div class="fact"><b>4</b><span>Languages, all fluent</span></div>
+  <div class="fact"><b>2028</b><span>Expected graduation</span></div>
+  <div class="fact"><b>2027</b><span>Summer internship goal</span></div>
+</div></div>
 
-    <section id="path" class="s char">
-      <div class="w sec">
-        <div class="hd">
-          <h2>Education and experience</h2>
-          <p>Where I study, where I've worked, and where I serve.</p>
-        </div>
-        <div>
-          <div class="row rv"><small>2024 to present</small>
-            <div>
-              <h3>B.Sc. Computer Engineering, Karabük University</h3>
-              <p>Third year, GPA 3.59/4.00. Database Systems was the course that clicked, and it led to my Oracle
-                certification. Working in C, Java, SQL, PHP and JavaScript.</p>
-            </div>
-          </div>
-          <div class="row rv"><small>Present</small>
-            <div>
-              <h3>Student team, Palestinian Students Union</h3>
-              <p>On the responsible team helping Palestinian students with university life.</p>
-            </div>
-          </div>
-          <div class="row rv"><small>During high school</small>
-            <div>
-              <h3>IT department, MKM Salgados</h3>
-              <p>My first professional work, in São Paulo.</p>
-            </div>
-          </div>
-          <div class="row rv"><small>Volunteering</small>
-            <div>
-              <h3>IHH humanitarian relief</h3>
-              <p>Volunteer with the foundation.</p>
-            </div>
-          </div>
-          <div class="row rv"><small>April 2021</small>
-            <div>
-              <h3>Debater for Brazil, Qatar International Schools Debating Championship</h3>
-              <p>Represented Brazil twice. The certificate from the Fifth Championship is below.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<main>
+<section id="story" class="s"><div class="w sec">
+  <div class="hd"><h2>My story</h2><p>Several countries' worth of change, one steady habit: listen to what people need, then build it.</p></div>
+  <div>
+    <div class="quote rv">Outside the house it was one life. Inside it was another. Both were mine.</div>
+    <p class="rv">I grew up holding two languages and two worlds at once, and they changed every few years. That taught me to adapt fast, explain the same idea in different ways, and stay calm when the ground moves. It's the habit I bring to engineering and to design.</p>
+    <div class="tl" id="tl" style="margin-top:34px"><div class="fill" id="fill"></div>
+      <div class="st rv"><small>Roots</small><h3>Khan Younis, Gaza</h3><p>My family is from Khan Younis in Palestine, a part of me no change of address ever touched.</p></div>
+      <div class="st rv"><small>Until 2013</small><h3>Born in Libya</h3><p>My first years, in a home where my father, a computer engineer, was always building or fixing something.</p></div>
+      <div class="st rv"><small>2013 to 2023</small><h3>São Paulo, Brazil</h3><p>I grew up in Brazil and graduated from the Escola Islâmica Brasileira. I took my first IT job while still in high school.</p></div>
+      <div class="st rv"><small>2023</small><h3>Türkiye</h3><p>I came to Karabük, spent a year learning Turkish, and chose Türkiye for its strong religious community and technological momentum.</p></div>
+      <div class="st rv"><small>Now</small><h3>Engineering, design and service</h3><p>Studying Computer Engineering, designing brands, and serving on the student team of the Palestinian Students Union.</p></div>
+    </div>
+    <div class="lg rv" style="margin-top:40px"><div><b>Português</b><span>Fluent</span></div><div><b>English</b><span>Fluent</span></div><div><b lang="ar" dir="rtl">العربية</b><span>Fluent</span></div><div><b>Türkçe</b><span>Fluent</span></div></div>
+  </div>
+</div></section>
 
-    <section id="work" class="s dark">
-      <div class="w sec">
-        <div class="hd">
-          <h2>Engineering projects</h2>
-          <p>One in development, one delivered. Both built end to end.</p>
-        </div>
-        <div>
-          <article class="pj rv">
-            <h3>Project Sentinel</h3>
-            <div class="k">Autonomous air-defense turret for Teknofest. Under active development.</div>
-            <p>A closed-loop turret that detects, classifies and hits balloon targets standing in for F-16s,
-              helicopters, missiles and drones at 5, 10 and 15 metres, inside a 60 cm envelope. Developed under Vitality
-              Technologies.</p>
-            <div class="sig"><span>Global-shutter camera</span><i>→</i><span>YOLOv8 +
-                TensorRT</span><i>→</i><span>10-byte UART</span><i>→</i><span>ESP32 /
-                FreeRTOS</span><i>→</i><span>Pan/tilt gimbal</span></div>
-            <dl>
-              <dt>Vision</dt>
-              <dd>Custom YOLOv8 on an RTX 4060 at 140 to 200+ FPS, HSV friend-or-foe filtering, lead-angle calculation.
-              </dd>
-              <dt>Real-time control</dt>
-              <dd>Core 0 parses serial and the emergency stop. Core 1 makes jitter-free STEP/DIR pulses and times the
-                firing MOSFET.</dd>
-              <dt>Motion</dt>
-              <dd>Closed-loop steppers with 3:1 GT2 reductions. Tilt covers 0 to 60 degrees.</dd>
-              <dt>Fabrication</dt>
-              <dd>SolidWorks design, printed on a Creality K1C in ASA, PETG and PA-CF.</dd>
-            </dl>
-            <div class="soon">CAD renders and test footage will be added after testing.</div>
-            <p class="tags">C/C++ · ESP-IDF · FreeRTOS · Python · OpenCV · PyTorch · TensorRT · CUDA</p>
-          </article>
-          <article class="pj rv">
-            <h3>Prestige Airlines</h3>
-            <div class="k">University project: airline booking platform with its own identity.</div>
-            <p>The whole passenger journey: flight search, seat selection, boarding pass with QR code, then a verified
-              review. Vanilla PHP and MySQL, no frontend framework.</p>
-            <dl>
-              <dt>Database</dt>
-              <dd>10+ normalized tables with foreign keys and cascading deletes.</dd>
-              <dt>Verified reviews</dt>
-              <dd>A SQL JOIN confirms the user flew the flight before rating it.</dd>
-              <dt>Interface</dt>
-              <dd>Persistent light and dark mode, custom star ratings and dropdowns, admin panels for fleet, schedules
-                and roles.</dd>
-            </dl>
-            <img src="assets/prestige-ui.jpg" alt="Prestige Airlines on desktop and mobile" loading="lazy">
-            <p class="tags">PHP · MySQL · JavaScript · HTML/CSS · Dompdf</p>
-          </article>
-        </div>
-      </div>
-    </section>
+<section id="path" class="s char"><div class="w sec">
+  <div class="hd"><h2>Education and experience</h2><p>Where I study, where I've worked, and where I serve.</p></div>
+  <div>
+    <div class="row rv"><small>2024 to present</small><div><h3>B.Sc. Computer Engineering, Karabük University</h3><p>Third year, GPA 3.59/4.00. Database Systems was the course that clicked, and it led to my Oracle certification. Working in C, Java, SQL, PHP and JavaScript.</p></div></div>
+    <div class="row rv"><small>Present</small><div><h3>Student team, Palestinian Students Union</h3><p>On the responsible team helping Palestinian students with university life.</p></div></div>
+    <div class="row rv"><small>During high school</small><div><h3>IT department, MKM Salgados</h3><p>My first professional work, in São Paulo.</p></div></div>
+    <div class="row rv"><small>Volunteering</small><div><h3>IHH humanitarian relief</h3><p>Volunteer with the foundation.</p></div></div>
+    <div class="row rv"><small>April 2021</small><div><h3>Debater for Brazil, Qatar International Schools Debating Championship</h3><p>Represented Brazil twice. The certificate from the Fifth Championship is below.</p></div></div>
+  </div>
+</div></section>
 
-    <section id="design" class="s paper">
-      <div class="w sec">
-        <div class="hd">
-          <h2>Graphic design</h2>
-          <p>It began as a hobby and became a profession because I like turning someone's need into something they can
-            see.</p>
-        </div>
-        <div>
-          <div class="tools rv"><span>Photoshop</span><span>Illustrator</span><span>After
-              Effects</span><span>Premiere</span><span>Figma</span><span>SolidWorks</span><span>Cinema
-              4D</span><span>Blender</span></div>
-          <div class="gal">
-            <figure class="pc rv"><img src="assets/fakhama.jpg" alt="Al Fakhama Al Maghribya gold calligraphy logo"
-                loading="lazy">
-              <figcaption><b>Al Fakhama Al Maghribya</b>Brand colors and logo</figcaption>
-            </figure>
-            <figure class="pc ct rv"><img src="assets/prestige-logo.jpg" alt="Prestige Airlines logo" loading="lazy">
-              <figcaption><b>Prestige Airlines</b>Airline logo and palette</figcaption>
-            </figure>
-            <figure class="pc ct rv"><img src="assets/artech.jpg" alt="ARTECH logo" loading="lazy">
-              <figcaption><b>ARTECH</b>Minimal logo for a robotics team</figcaption>
-            </figure>
-            <figure class="pc rv"><img src="assets/poster.jpg" alt="KBÜFEST invitation poster" loading="lazy">
-              <figcaption><b>KBÜFEST poster</b>Event ad built to catch attention</figcaption>
-            </figure>
-          </div>
-          <p style="margin-top:28px"><a class="btn l" href="https://www.behance.net/mohameddabour_" target="_blank"
-              rel="noopener">See the full portfolio on Behance</a></p>
-        </div>
-      </div>
-    </section>
+<section id="work" class="s dark"><div class="w sec">
+  <div class="hd"><h2>Engineering projects</h2><p>One in development, one delivered. Both built end to end.</p></div>
+  <div>
+    <article class="pj rv"><h3>Project Sentinel</h3><div class="k">Autonomous air-defense turret for Teknofest. Under active development.</div>
+      <p>A closed-loop turret that detects, classifies and hits balloon targets standing in for F-16s, helicopters, missiles and drones at 5, 10 and 15 metres, inside a 60 cm envelope. Developed under Vitality Technologies.</p>
+      <div class="sig"><span>Global-shutter camera</span><i>→</i><span>YOLOv8 + TensorRT</span><i>→</i><span>10-byte UART</span><i>→</i><span>ESP32 / FreeRTOS</span><i>→</i><span>Pan/tilt gimbal</span></div>
+      <dl><dt>Vision</dt><dd>Custom YOLOv8 on an RTX 4060 at 140 to 200+ FPS, HSV friend-or-foe filtering, lead-angle calculation.</dd><dt>Real-time control</dt><dd>Core 0 parses serial and the emergency stop. Core 1 makes jitter-free STEP/DIR pulses and times the firing MOSFET.</dd><dt>Motion</dt><dd>Closed-loop steppers with 3:1 GT2 reductions. Tilt covers 0 to 60 degrees.</dd><dt>Fabrication</dt><dd>SolidWorks design, printed on a Creality K1C in ASA, PETG and PA-CF.</dd></dl>
+      <div class="soon">CAD renders and test footage will be added after testing.</div>
+      <p class="tags">C/C++ · ESP-IDF · FreeRTOS · Python · OpenCV · PyTorch · TensorRT · CUDA</p></article>
+    <article class="pj rv"><h3>Prestige Airlines</h3><div class="k">University project: airline booking platform with its own identity.</div>
+      <p>The whole passenger journey: flight search, seat selection, boarding pass with QR code, then a verified review. Vanilla PHP and MySQL, no frontend framework.</p>
+      <dl><dt>Database</dt><dd>10+ normalized tables with foreign keys and cascading deletes.</dd><dt>Verified reviews</dt><dd>A SQL JOIN confirms the user flew the flight before rating it.</dd><dt>Interface</dt><dd>Persistent light and dark mode, custom star ratings and dropdowns, admin panels for fleet, schedules and roles.</dd></dl>
+      <img src="assets/prestige-ui.jpg" alt="Prestige Airlines on desktop and mobile" loading="lazy">
+      <p class="tags">PHP · MySQL · JavaScript · HTML/CSS · Dompdf</p></article>
+  </div>
+</div></section>
 
-    <section id="proof" class="s">
-      <div class="w sec">
-        <div class="hd">
-          <h2>Certificates and references</h2>
-          <p>Each one opens the original document.</p>
-        </div>
-        <div>
-          <a class="cr rv" href="assets/certs/oracle-sql.pdf" target="_blank" rel="noopener">
-            <div>
-              <h3>Database Design and Programming with SQL</h3>
-              <p>Oracle Academy at Karabük University. All coursework completed, 26 June 2026.</p>
-            </div><span>View PDF</span>
-          </a>
-          <a class="cr rv" href="assets/certs/toti-frontend-ux.pdf" target="_blank" rel="noopener">
-            <div>
-              <h3>Front-end and UX Development, 80 hours</h3>
-              <p>Toti, Brazil. HTML5, CSS3, JavaScript, Git and UX, August to November 2020.</p>
-            </div><span>View PDF</span>
-          </a>
-          <a class="cr rv" href="assets/certs/qatar-debate.pdf" target="_blank" rel="noopener">
-            <div>
-              <h3>Fifth International Schools Debating Championship</h3>
-              <p>QatarDebate Center. Debater on Brazil's national team, 3 to 7 April 2021.</p>
-            </div><span>View PDF</span>
-          </a>
-          <div class="ref rv">
-            <div class="quote">"One of my best students in my teaching career."</div>
-            <p>From a letter by mathematics teacher Alan Paganelli, Brazilian Islamic School, February 2023. It
-              describes my discipline, my questions until I understand deeply, and my effort to help younger students.
-            </p><a class="btn p" href="assets/certs/reference-letter.pdf" target="_blank" rel="noopener">Read the
-              letter</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="design" class="s paper"><div class="w sec">
+  <div class="hd"><h2>Graphic design</h2><p>It began as a hobby and became a profession because I like turning someone's need into something they can see.</p></div>
+  <div>
+    <div class="tools rv"><span>Photoshop</span><span>Illustrator</span><span>After Effects</span><span>Premiere</span><span>Figma</span><span>SolidWorks</span><span>Cinema 4D</span><span>Blender</span></div>
+    <div class="gal">
+      <figure class="pc rv"><img src="assets/fakhama.jpg" alt="Al Fakhama Al Maghribya gold calligraphy logo" loading="lazy"><figcaption><b>Al Fakhama Al Maghribya</b>Brand colors and logo</figcaption></figure>
+      <figure class="pc ct rv"><img src="assets/prestige-logo.jpg" alt="Prestige Airlines logo" loading="lazy"><figcaption><b>Prestige Airlines</b>Airline logo and palette</figcaption></figure>
+      <figure class="pc ct rv"><img src="assets/artech.jpg" alt="ARTECH logo" loading="lazy"><figcaption><b>ARTECH</b>Minimal logo for a robotics team</figcaption></figure>
+      <figure class="pc rv"><img src="assets/poster.jpg" alt="KBÜFEST invitation poster" loading="lazy"><figcaption><b>KBÜFEST poster</b>Event ad built to catch attention</figcaption></figure>
+    </div>
+    <p style="margin-top:28px"><a class="btn l" href="https://www.behance.net/mohameddabour_" target="_blank" rel="noopener">See the full portfolio on Behance</a></p>
+  </div>
+</div></section>
 
-    <section id="contact" class="s dark ct">
-      <div class="w">
-        <h2 class="rv">Let's build something.</h2>
-        <p class="rv">I'm looking for a Summer 2027 internship in engineering or design. LinkedIn is the fastest way to
-          reach me.</p>
-        <div class="btns rv">
-          <a class="btn p" href="https://www.linkedin.com/in/mohamedeyaddabour/" target="_blank"
-            rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/mohamedeyaddabour" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.behance.net/mohameddabour_" target="_blank" rel="noopener">Behance</a>
-          <a class="btn" href="assets/Mohamed_D_CV.docx" download="Mohamed_D_CV.docx" data-cv>Download CV</a>
-        </div>
-        <p id="cvmsg" style="margin-top:18px;min-height:1.6em;font-size:.95rem"></p>
-      </div>
-    </section>
-  </main>
-  <footer>© <span id="y">2026</span> Mohamed E. Dabour · Karabük, Türkiye</footer>
+<section id="proof" class="s"><div class="w sec">
+  <div class="hd"><h2>Certificates and references</h2><p>Each one opens the original document.</p></div>
+  <div>
+    <a class="cr rv" href="assets/certs/oracle-sql.pdf" target="_blank" rel="noopener"><div><h3>Database Design and Programming with SQL</h3><p>Oracle Academy at Karabük University. All coursework completed, 26 June 2026.</p></div><span>View PDF</span></a>
+    <a class="cr rv" href="assets/certs/toti-frontend-ux.pdf" target="_blank" rel="noopener"><div><h3>Front-end and UX Development, 80 hours</h3><p>Toti, Brazil. HTML5, CSS3, JavaScript, Git and UX, August to November 2020.</p></div><span>View PDF</span></a>
+    <a class="cr rv" href="assets/certs/qatar-debate.pdf" target="_blank" rel="noopener"><div><h3>Fifth International Schools Debating Championship</h3><p>QatarDebate Center. Debater on Brazil's national team, 3 to 7 April 2021.</p></div><span>View PDF</span></a>
+    <div class="ref rv"><div class="quote">"One of my best students in my teaching career."</div><p>From a letter by mathematics teacher Alan Paganelli, Brazilian Islamic School, February 2023. It describes my discipline, my questions until I understand deeply, and my effort to help younger students.</p><a class="btn p" href="assets/certs/reference-letter.pdf" target="_blank" rel="noopener">Read the letter</a></div>
+  </div>
+</div></section>
 
-  <script>
-    var red = matchMedia('(prefers-reduced-motion: reduce)').matches;
+<section id="contact" class="s dark ct"><div class="w">
+  <h2 class="rv">Let's build something.</h2>
+  <p class="rv">I'm looking for a Summer 2027 internship in engineering or design. LinkedIn is the fastest way to reach me.</p>
+  <div class="btns rv"><a class="btn p" href="https://www.linkedin.com/in/mohamedeyaddabour/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/mohamedeyaddabour" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.behance.net/mohameddabour_" target="_blank" rel="noopener">Behance</a><a class="btn" href="assets/Mohamed_D_CV.docx" download="Mohamed_D_CV.docx" data-cv>Download CV</a></div>
+  <p id="cvmsg" style="margin-top:18px;min-height:1.6em;font-size:.95rem"></p>
+</div></section>
+</main>
+<footer>© <span id="y">2026</span> Mohamed E. Dabour · Karabük, Türkiye</footer>
 
-    var yEl = document.getElementById('y');
-    if (yEl) yEl.textContent = new Date().getFullYear();
+<script>
+var tr=function(k){return typeof LANG!=='undefined'&&LANG!=='en'&&typeof D!=='undefined'&&D[LANG][k]||k};
+var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('y').textContent=new Date().getFullYear();
+var w=['Olá','Hello','مرحباً','Merhaba'],k=1,hi=document.getElementById('hi');
+if(!red)setInterval(function(){hi.style.opacity=0;setTimeout(function(){k=(k+1)%4;hi.textContent=w[k];hi.style.opacity=1},350)},2400);
 
-    var w = ['Olá', 'Hello', 'مرحباً', 'Merhaba'], k = 1, hi = document.getElementById('hi');
-    if (hi && !red) {
-      setInterval(function () {
-        hi.style.opacity = 0;
-        setTimeout(function () {
-          k = (k + 1) % 4;
-          hi.textContent = w[k];
-          hi.style.opacity = 1;
-        }, 350);
-      }, 2400);
-    }
-
-    var t = document.getElementById('trk'),
-      r = document.getElementById('ret'),
-      b = document.getElementById('bal'),
-      o = document.getElementById('out'),
-      tx = 0, ty = 0, x = 0, y = 0, live = false;
-
-    function ctr() {
-      if (!t) return;
-      var a = t.getBoundingClientRect();
-      x = tx = a.width / 2;
-      y = ty = a.height * 0.7;
-    }
-    ctr();
-    addEventListener('resize', ctr);
-
-    if (t) {
-      t.addEventListener('pointermove', function (e) {
-        var a = t.getBoundingClientRect();
-        tx = e.clientX - a.left;
-        ty = e.clientY - a.top;
-        live = true;
-      });
-    }
-
-    (function f() {
-      x += (tx - x) * (red ? 1 : 0.14);
-      y += (ty - y) * (red ? 1 : 0.14);
-      if (r) r.style.transform = 'translate(' + x + 'px,' + y + 'px)';
-      if (b && r) {
-        var dx = Math.round(b.offsetLeft + 10 - x),
-          dy = Math.round(b.offsetTop + 10 - y),
-          L = Math.hypot(dx, dy) < 30;
-        r.classList.toggle('lock', L);
-        if (live && o) {
-          o.innerHTML = L ? '<b>Locked.</b> Error is almost zero.' : 'ΔX ' + dx + ' px · ΔY ' + dy + ' px';
-        }
-      }
-      requestAnimationFrame(f);
-    })();
-
-    var pg = document.getElementById('prog'),
-      tl = document.getElementById('tl'),
-      fl = document.getElementById('fill');
-
-    function sc() {
-      var h = document.documentElement;
-      if (pg) pg.style.width = (h.scrollTop / (h.scrollHeight - innerHeight) * 100) + '%';
-      if (tl && fl) {
-        var a = tl.getBoundingClientRect(),
-          p = Math.min(Math.max((innerHeight * 0.65 - a.top) / a.height, 0), 1);
-        fl.style.height = (p * (a.height - 16)) + 'px';
-      }
-    }
-    addEventListener('scroll', sc, { passive: true });
-    sc();
-
-    var io = new IntersectionObserver(function (e) {
-      e.forEach(function (n) {
-        if (n.isIntersecting) {
-          n.target.classList.add('in');
-          io.unobserve(n.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.rv').forEach(function (n) { io.observe(n); });
-
-    var c = document.querySelector('[data-count]');
-    if (c) {
-      var cio = new IntersectionObserver(function (e) {
-        if (e[0].isIntersecting && !red) {
-          var s = performance.now();
-          (function u(n) {
-            var p = Math.min((n - s) / 1400, 1);
-            c.textContent = (3.59 * (1 - Math.pow(1 - p, 3))).toFixed(2);
-            if (p < 1) requestAnimationFrame(u);
-          })(s);
-        }
-        cio.disconnect();
-      });
-      cio.observe(c);
-    }
-
-    document.querySelectorAll('[data-cv]').forEach(function (a) {
-      a.setAttribute('href', 'assets/Mohamed_D_CV.docx');
-      a.setAttribute('download', 'Mohamed_D_CV.docx');
-
-      a.addEventListener('click', function () {
-        var m = document.getElementById('cvmsg');
-        if (m) {
-          m.textContent = 'Downloading CV...';
-        }
-      });
-    });
-  </script>
+var t=document.getElementById('trk'),r=document.getElementById('ret'),b=document.getElementById('bal'),o=document.getElementById('out'),tx=0,ty=0,x=0,y=0,live=false;
+function ctr(){var a=t.getBoundingClientRect();x=tx=a.width/2;y=ty=a.height*.7}ctr();addEventListener('resize',ctr);
+t.addEventListener('pointermove',function(e){var a=t.getBoundingClientRect();tx=e.clientX-a.left;ty=e.clientY-a.top;live=true});
+(function f(){x+=(tx-x)*(red?1:.14);y+=(ty-y)*(red?1:.14);r.style.transform='translate('+x+'px,'+y+'px)';
+var dx=Math.round(b.offsetLeft+10-x),dy=Math.round(b.offsetTop+10-y),L=Math.hypot(dx,dy)<30;r.classList.toggle('lock',L);
+if(live)o.innerHTML=L?'<b>'+tr('Locked.')+'</b> '+tr('Error is almost zero.'):'ΔX '+dx+' px · ΔY '+dy+' px';requestAnimationFrame(f)})();
+var pg=document.getElementById('prog'),tl=document.getElementById('tl'),fl=document.getElementById('fill');
+function sc(){var h=document.documentElement;document.querySelector('.nav').classList.toggle('sc',h.scrollTop>innerHeight*.6);pg.style.width=(h.scrollTop/(h.scrollHeight-innerHeight)*100)+'%';
+var a=tl.getBoundingClientRect(),p=Math.min(Math.max((innerHeight*.65-a.top)/a.height,0),1);fl.style.height=(p*(a.height-16))+'px'}
+addEventListener('scroll',sc,{passive:true});sc();
+var io=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add('in');io.unobserve(n.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+var c=document.querySelector('[data-count]'),cio=new IntersectionObserver(function(e){if(e[0].isIntersecting&&!red){var s=performance.now();(function u(n){var p=Math.min((n-s)/1400,1);c.textContent=(3.59*(1-Math.pow(1-p,3))).toFixed(2);if(p<1)requestAnimationFrame(u)})(s)}cio.disconnect()});cio.observe(c);
+</script>
+<script>var D={"pt": {"Story": "História", "Experience": "Experiência", "Projects": "Projetos", "Design": "Design", "Certificates": "Certificados", "Contact": "Contato", "Computer Engineering student and graphic designer": "Estudante de Engenharia da Computação e designer gráfico", "Brazilian of Palestinian roots, building embedded and web systems at Karabük University, and designing the brands around them.": "Brasileiro de raízes palestinas, desenvolvo sistemas embarcados e web na Universidade de Karabük e crio as marcas que os acompanham.", "View my work": "Ver meus trabalhos", "Open to a Summer 2027 internship": "Aberto a um estágio no verão de 2027", "Karabük University, year 3": "Universidade de Karabük, 3º ano", "Move your cursor here. My turret does this 140+ times a second.": "Mova o cursor aqui. Minha torre faz isso mais de 140 vezes por segundo.", "GPA out of 4.00": "GPA em 4,00", "Languages, all fluent": "Idiomas, todos fluentes", "Expected graduation": "Formatura prevista", "Summer internship goal": "Meta de estágio no verão", "My story": "Minha história", "Several countries' worth of change, one steady habit: listen to what people need, then build it.": "Vários países de mudanças, um hábito constante: ouvir o que as pessoas precisam e então construir.", "Outside the house it was one life. Inside it was another. Both were mine.": "Fora de casa era uma vida. Dentro, era outra. Ambas eram minhas.", "I grew up holding two languages and two worlds at once, and they changed every few years. That taught me to adapt fast, explain the same idea in different ways, and stay calm when the ground moves. It's the habit I bring to engineering and to design.": "Cresci segurando dois idiomas e dois mundos ao mesmo tempo, e eles mudavam a cada poucos anos. Isso me ensinou a me adaptar rápido, explicar a mesma ideia de formas diferentes e manter a calma quando o chão se move. É o hábito que levo para a engenharia e para o design.", "Roots": "Raízes", "My family is from Khan Younis in Palestine, a part of me no change of address ever touched.": "Minha família é de Khan Younis, na Palestina, uma parte de mim que nenhuma mudança de endereço tocou.", "Until 2013": "Até 2013", "Born in Libya": "Nasci na Líbia", "My first years, in a home where my father, a computer engineer, was always building or fixing something.": "Meus primeiros anos, numa casa onde meu pai, engenheiro de computação, estava sempre construindo ou consertando alguma coisa.", "2013 to 2023": "2013 a 2023", "São Paulo, Brazil": "São Paulo, Brasil", "I grew up in Brazil and graduated from the Escola Islâmica Brasileira. I took my first IT job while still in high school.": "Cresci no Brasil e me formei na Escola Islâmica Brasileira. Tive meu primeiro emprego de TI ainda no ensino médio.", "I came to Karabük, spent a year learning Turkish, and chose Türkiye for its strong religious community and technological momentum.": "Vim para Karabük, passei um ano aprendendo turco e escolhi a Türkiye por sua forte comunidade religiosa e seu impulso tecnológico.", "Now": "Agora", "Engineering, design and service": "Engenharia, design e serviço", "Studying Computer Engineering, designing brands, and serving on the student team of the Palestinian Students Union.": "Estudo Engenharia da Computação, crio marcas e atuo na equipe estudantil da União dos Estudantes Palestinos.", "Fluent": "Fluente", "Education and experience": "Formação e experiência", "Where I study, where I've worked, and where I serve.": "Onde estudo, onde trabalhei e onde sirvo.", "2024 to present": "2024 até hoje", "B.Sc. Computer Engineering, Karabük University": "Bacharelado em Engenharia da Computação, Universidade de Karabük", "Third year, GPA 3.59/4.00. Database Systems was the course that clicked, and it led to my Oracle certification. Working in C, Java, SQL, PHP and JavaScript.": "Terceiro ano, GPA 3,59/4,00. Sistemas de Banco de Dados foi a disciplina que mais me conquistou e levou à minha certificação Oracle. Trabalho com C, Java, SQL, PHP e JavaScript.", "Present": "Atualmente", "Student team, Palestinian Students Union": "Equipe estudantil, União dos Estudantes Palestinos", "On the responsible team helping Palestinian students with university life.": "Na equipe responsável por ajudar estudantes palestinos na vida universitária.", "During high school": "Durante o ensino médio", "IT department, MKM Salgados": "Departamento de TI, MKM Salgados", "My first professional work, in São Paulo.": "Meu primeiro trabalho profissional, em São Paulo.", "Volunteering": "Voluntariado", "IHH humanitarian relief": "Ajuda humanitária da IHH", "Volunteer with the foundation.": "Voluntário da fundação.", "April 2021": "Abril de 2021", "Debater for Brazil, Qatar International Schools Debating Championship": "Debatedor pelo Brasil, Campeonato Internacional de Debates Escolares do Catar", "Represented Brazil twice. The certificate from the Fifth Championship is below.": "Representei o Brasil duas vezes. O certificado do Quinto Campeonato está abaixo.", "Engineering projects": "Projetos de engenharia", "One in development, one delivered. Both built end to end.": "Um em desenvolvimento, um entregue. Ambos construídos de ponta a ponta.", "Project Sentinel": "Projeto Sentinel", "Autonomous air-defense turret for Teknofest. Under active development.": "Torre autônoma de defesa aérea para o Teknofest. Em desenvolvimento ativo.", "A closed-loop turret that detects, classifies and hits balloon targets standing in for F-16s, helicopters, missiles and drones at 5, 10 and 15 metres, inside a 60 cm envelope. Developed under Vitality Technologies.": "Uma torre de malha fechada que detecta, classifica e atinge balões que representam F-16, helicópteros, mísseis e drones a 5, 10 e 15 metros, dentro de um envelope de 60 cm. Desenvolvida na Vitality Technologies.", "Global-shutter camera": "Câmera global shutter", "Pan/tilt gimbal": "Gimbal pan/tilt", "Vision": "Visão", "Custom YOLOv8 on an RTX 4060 at 140 to 200+ FPS, HSV friend-or-foe filtering, lead-angle calculation.": "YOLOv8 personalizado em uma RTX 4060 a 140–200+ FPS, filtragem HSV de amigo ou inimigo e cálculo de ângulo de antecipação.", "Real-time control": "Controle em tempo real", "Core 0 parses serial and the emergency stop. Core 1 makes jitter-free STEP/DIR pulses and times the firing MOSFET.": "O núcleo 0 lê a serial e a parada de emergência. O núcleo 1 gera pulsos STEP/DIR sem jitter e controla o tempo do MOSFET de disparo.", "Motion": "Movimento", "Closed-loop steppers with 3:1 GT2 reductions. Tilt covers 0 to 60 degrees.": "Motores de passo de malha fechada com reduções GT2 de 3:1. A inclinação cobre de 0 a 60 graus.", "Fabrication": "Fabricação", "SolidWorks design, printed on a Creality K1C in ASA, PETG and PA-CF.": "Projeto no SolidWorks, impresso em uma Creality K1C em ASA, PETG e PA-CF.", "CAD renders and test footage will be added after testing.": "Renders CAD e vídeos de teste serão adicionados após os testes.", "University project: airline booking platform with its own identity.": "Projeto universitário: plataforma de reservas aéreas com identidade própria.", "The whole passenger journey: flight search, seat selection, boarding pass with QR code, then a verified review. Vanilla PHP and MySQL, no frontend framework.": "Toda a jornada do passageiro: busca de voos, escolha de assento, cartão de embarque com QR code e avaliação verificada. PHP e MySQL puros, sem framework de frontend.", "Database": "Banco de dados", "10+ normalized tables with foreign keys and cascading deletes.": "Mais de 10 tabelas normalizadas com chaves estrangeiras e exclusão em cascata.", "Verified reviews": "Avaliações verificadas", "A SQL JOIN confirms the user flew the flight before rating it.": "Um JOIN em SQL confirma que o usuário voou no voo antes de avaliá-lo.", "Interface": "Interface", "Persistent light and dark mode, custom star ratings and dropdowns, admin panels for fleet, schedules and roles.": "Modo claro e escuro persistente, avaliações por estrelas e menus suspensos personalizados, e painéis administrativos para frota, horários e funções.", "Graphic design": "Design gráfico", "It began as a hobby and became a profession because I like turning someone's need into something they can see.": "Começou como hobby e virou profissão porque gosto de transformar a necessidade de alguém em algo que ela possa ver.", "Brand colors and logo": "Cores da marca e logotipo", "Airline logo and palette": "Logotipo e paleta de uma companhia aérea", "Minimal logo for a robotics team": "Logotipo minimalista para uma equipe de robótica", "KBÜFEST poster": "Cartaz do KBÜFEST", "Event ad built to catch attention": "Anúncio de evento feito para chamar atenção", "See the full portfolio on Behance": "Ver o portfólio completo no Behance", "Certificates and references": "Certificados e referências", "Each one opens the original document.": "Cada um abre o documento original.", "Database Design and Programming with SQL": "Projeto de Banco de Dados e Programação com SQL", "Oracle Academy at Karabük University. All coursework completed, 26 June 2026.": "Oracle Academy na Universidade de Karabük. Todas as disciplinas concluídas em 26 de junho de 2026.", "View PDF": "Ver PDF", "Front-end and UX Development, 80 hours": "Desenvolvimento Front-end e UX, 80 horas", "Toti, Brazil. HTML5, CSS3, JavaScript, Git and UX, August to November 2020.": "Toti, Brasil. HTML5, CSS3, JavaScript, Git e UX, de agosto a novembro de 2020.", "Fifth International Schools Debating Championship": "Quinto Campeonato Internacional de Debates Escolares", "QatarDebate Center. Debater on Brazil's national team, 3 to 7 April 2021.": "QatarDebate Center. Debatedor da seleção nacional do Brasil, de 3 a 7 de abril de 2021.", "\"One of my best students in my teaching career.\"": "“Um dos melhores alunos da minha carreira como professor.”", "From a letter by mathematics teacher Alan Paganelli, Brazilian Islamic School, February 2023. It describes my discipline, my questions until I understand deeply, and my effort to help younger students.": "De uma carta do professor de matemática Alan Paganelli, Escola Islâmica Brasileira, fevereiro de 2023. Ela descreve minha disciplina, minhas perguntas até entender a fundo e meu esforço para ajudar os alunos mais novos.", "Read the letter": "Ler a carta", "Let's build something.": "Vamos construir algo.", "I'm looking for a Summer 2027 internship in engineering or design. LinkedIn is the fastest way to reach me.": "Procuro um estágio no verão de 2027 em engenharia ou design. O LinkedIn é a forma mais rápida de falar comigo.", "Download CV": "Baixar currículo", "Locked.": "Travado.", "Error is almost zero.": "O erro é quase zero.", "My CV is being finalized. LinkedIn has my full details for now.": "Meu currículo está sendo finalizado. Por enquanto, o LinkedIn tem todos os meus dados.", "TITLE": "Mohamed E. Dabour | Engenheiro da Computação e Designer"}, "ar": {"Story": "القصة", "Experience": "الخبرة", "Projects": "المشاريع", "Design": "التصميم", "Certificates": "الشهادات", "Contact": "تواصل", "Computer Engineering student and graphic designer": "طالب هندسة حاسوب ومصمم جرافيك", "Brazilian of Palestinian roots, building embedded and web systems at Karabük University, and designing the brands around them.": "برازيلي من أصول فلسطينية، أبني أنظمة مدمجة وأنظمة ويب في جامعة كارابوك، وأصمم الهويات التي ترافقها.", "View my work": "شاهد أعمالي", "Open to a Summer 2027 internship": "متاح لتدريب صيف 2027", "Karabük University, year 3": "جامعة كارابوك، السنة الثالثة", "Move your cursor here. My turret does this 140+ times a second.": "حرّك المؤشر هنا. هذا ما يفعله برجي أكثر من 140 مرة في الثانية.", "GPA out of 4.00": "المعدل من 4.00", "Languages, all fluent": "لغات، جميعها بطلاقة", "Expected graduation": "التخرج المتوقع", "Summer internship goal": "هدف التدريب الصيفي", "My story": "قصتي", "Several countries' worth of change, one steady habit: listen to what people need, then build it.": "بلدان عدة من التغيير، وعادة واحدة ثابتة: أن أصغي لما يحتاجه الناس ثم أبنيه.", "Outside the house it was one life. Inside it was another. Both were mine.": "خارج البيت كانت حياة، وداخله كانت حياة أخرى. وكلتاهما لي.", "I grew up holding two languages and two worlds at once, and they changed every few years. That taught me to adapt fast, explain the same idea in different ways, and stay calm when the ground moves. It's the habit I bring to engineering and to design.": "نشأت أحمل لغتين وعالمين في آنٍ واحد، وكانا يتغيران كل بضع سنوات. علّمني ذلك أن أتكيف بسرعة، وأن أشرح الفكرة نفسها بطرق مختلفة، وأن أحافظ على هدوئي حين تهتز الأرض تحت قدميّ. هذه هي العادة التي أحملها إلى الهندسة وإلى التصميم.", "Roots": "الجذور", "My family is from Khan Younis in Palestine, a part of me no change of address ever touched.": "عائلتي من خان يونس في فلسطين، جزء مني لم يلمسه أي تغيير في العنوان.", "Until 2013": "حتى 2013", "Born in Libya": "وُلدت في ليبيا", "My first years, in a home where my father, a computer engineer, was always building or fixing something.": "سنواتي الأولى، في بيت كان أبي، وهو مهندس حاسوب، يبني فيه شيئاً أو يصلحه دائماً.", "2013 to 2023": "من 2013 إلى 2023", "São Paulo, Brazil": "ساو باولو، البرازيل", "I grew up in Brazil and graduated from the Escola Islâmica Brasileira. I took my first IT job while still in high school.": "نشأت في البرازيل وتخرجت من المدرسة الإسلامية البرازيلية. وحصلت على أول وظيفة لي في تقنية المعلومات وأنا لا أزال في المرحلة الثانوية.", "I came to Karabük, spent a year learning Turkish, and chose Türkiye for its strong religious community and technological momentum.": "جئت إلى كارابوك، وقضيت عاماً أتعلم التركية، واخترت تركيا لمجتمعها الديني القوي وزخمها التقني.", "Now": "الآن", "Engineering, design and service": "هندسة وتصميم وخدمة", "Studying Computer Engineering, designing brands, and serving on the student team of the Palestinian Students Union.": "أدرس هندسة الحاسوب، وأصمم الهويات، وأخدم ضمن الفريق الطلابي في اتحاد الطلبة الفلسطينيين.", "Fluent": "بطلاقة", "Education and experience": "التعليم والخبرة", "Where I study, where I've worked, and where I serve.": "أين أدرس، وأين عملت، وأين أخدم.", "2024 to present": "من 2024 حتى الآن", "B.Sc. Computer Engineering, Karabük University": "بكالوريوس هندسة الحاسوب، جامعة كارابوك", "Third year, GPA 3.59/4.00. Database Systems was the course that clicked, and it led to my Oracle certification. Working in C, Java, SQL, PHP and JavaScript.": "السنة الثالثة، المعدل 3.59/4.00. كانت أنظمة قواعد البيانات المادة التي شدّتني، وقادتني إلى شهادة أوراكل. أعمل بلغات C وJava وSQL وPHP وJavaScript.", "Present": "حالياً", "Student team, Palestinian Students Union": "الفريق الطلابي، اتحاد الطلبة الفلسطينيين", "On the responsible team helping Palestinian students with university life.": "ضمن الفريق المسؤول عن مساعدة الطلبة الفلسطينيين في حياتهم الجامعية.", "During high school": "خلال المرحلة الثانوية", "IT department, MKM Salgados": "قسم تقنية المعلومات، MKM Salgados", "My first professional work, in São Paulo.": "أول عمل مهني لي، في ساو باولو.", "Volunteering": "العمل التطوعي", "IHH humanitarian relief": "الإغاثة الإنسانية في IHH", "Volunteer with the foundation.": "متطوع لدى المؤسسة.", "April 2021": "أبريل 2021", "Debater for Brazil, Qatar International Schools Debating Championship": "متناظر عن البرازيل، بطولة قطر الدولية لمناظرات المدارس", "Represented Brazil twice. The certificate from the Fifth Championship is below.": "مثّلت البرازيل مرتين. شهادة البطولة الخامسة أدناه.", "Engineering projects": "المشاريع الهندسية", "One in development, one delivered. Both built end to end.": "واحد قيد التطوير وآخر مكتمل. كلاهما بُني من البداية إلى النهاية.", "Project Sentinel": "مشروع سنتينل", "Autonomous air-defense turret for Teknofest. Under active development.": "برج دفاع جوي ذاتي التشغيل لمسابقة تكنوفيست. قيد التطوير النشط.", "A closed-loop turret that detects, classifies and hits balloon targets standing in for F-16s, helicopters, missiles and drones at 5, 10 and 15 metres, inside a 60 cm envelope. Developed under Vitality Technologies.": "برج بحلقة تحكم مغلقة يكتشف ويصنّف ويصيب أهدافاً من البالونات تمثل طائرات F-16 ومروحيات وصواريخ ومسيّرات على مسافات 5 و10 و15 متراً، ضمن حيّز لا يتجاوز 60 سم. طُوّر ضمن Vitality Technologies.", "Global-shutter camera": "كاميرا بغالق عام", "Pan/tilt gimbal": "قاعدة دوران وإمالة", "Vision": "الرؤية", "Custom YOLOv8 on an RTX 4060 at 140 to 200+ FPS, HSV friend-or-foe filtering, lead-angle calculation.": "نموذج YOLOv8 مخصص على RTX 4060 بسرعة 140 إلى 200+ إطار في الثانية، مع تصفية HSV لتمييز الصديق من العدو وحساب زاوية التقدّم.", "Real-time control": "التحكم في الزمن الحقيقي", "Core 0 parses serial and the emergency stop. Core 1 makes jitter-free STEP/DIR pulses and times the firing MOSFET.": "تقرأ النواة 0 المنفذ التسلسلي وإيقاف الطوارئ. وتولّد النواة 1 نبضات STEP/DIR دون اهتزاز وتضبط توقيت MOSFET الإطلاق.", "Motion": "الحركة", "Closed-loop steppers with 3:1 GT2 reductions. Tilt covers 0 to 60 degrees.": "محركات خطوية بحلقة مغلقة مع تخفيض GT2 بنسبة 3:1. يغطي الميلان من 0 إلى 60 درجة.", "Fabrication": "التصنيع", "SolidWorks design, printed on a Creality K1C in ASA, PETG and PA-CF.": "تصميم في SolidWorks، وطباعة على Creality K1C بخامات ASA وPETG وPA-CF.", "CAD renders and test footage will be added after testing.": "ستُضاف نماذج CAD ومقاطع الاختبار بعد انتهاء الاختبارات.", "University project: airline booking platform with its own identity.": "مشروع جامعي: منصة حجز طيران بهوية خاصة.", "The whole passenger journey: flight search, seat selection, boarding pass with QR code, then a verified review. Vanilla PHP and MySQL, no frontend framework.": "رحلة المسافر كاملة: البحث عن الرحلات، واختيار المقعد، وبطاقة صعود برمز QR، ثم تقييم موثّق. PHP وMySQL الخالصان دون إطار عمل للواجهة.", "Database": "قاعدة البيانات", "10+ normalized tables with foreign keys and cascading deletes.": "أكثر من 10 جداول معيارية بمفاتيح أجنبية وحذف تتابعي.", "Verified reviews": "تقييمات موثّقة", "A SQL JOIN confirms the user flew the flight before rating it.": "استعلام SQL JOIN يتأكد أن المستخدم سافر على الرحلة قبل أن يقيّمها.", "Interface": "الواجهة", "Persistent light and dark mode, custom star ratings and dropdowns, admin panels for fleet, schedules and roles.": "وضع فاتح وداكن دائم، وتقييم بالنجوم وقوائم منسدلة مخصصة، ولوحات إدارة للأسطول والجداول والصلاحيات.", "Graphic design": "التصميم الجرافيكي", "It began as a hobby and became a profession because I like turning someone's need into something they can see.": "بدأ هواية ثم صار مهنة لأنني أحب تحويل حاجة شخص ما إلى شيء يستطيع أن يراه.", "Brand colors and logo": "ألوان العلامة وشعارها", "Airline logo and palette": "شعار وألوان شركة طيران", "Minimal logo for a robotics team": "شعار بسيط لفريق روبوتات", "KBÜFEST poster": "ملصق KBÜFEST", "Event ad built to catch attention": "إعلان فعالية صُمّم لجذب الانتباه", "See the full portfolio on Behance": "شاهد المعرض الكامل على Behance", "Certificates and references": "الشهادات والتزكيات", "Each one opens the original document.": "كل واحدة تفتح الوثيقة الأصلية.", "Database Design and Programming with SQL": "تصميم قواعد البيانات والبرمجة بلغة SQL", "Oracle Academy at Karabük University. All coursework completed, 26 June 2026.": "أكاديمية أوراكل في جامعة كارابوك. أُنجزت جميع المقررات في 26 يونيو 2026.", "View PDF": "عرض PDF", "Front-end and UX Development, 80 hours": "تطوير الواجهات الأمامية وتجربة المستخدم، 80 ساعة", "Toti, Brazil. HTML5, CSS3, JavaScript, Git and UX, August to November 2020.": "توتي، البرازيل. HTML5 وCSS3 وJavaScript وGit وتجربة المستخدم، من أغسطس إلى نوفمبر 2020.", "Fifth International Schools Debating Championship": "بطولة المدارس الدولية الخامسة للمناظرات", "QatarDebate Center. Debater on Brazil's national team, 3 to 7 April 2021.": "مركز مناظرات قطر. متناظر في المنتخب الوطني البرازيلي، من 3 إلى 7 أبريل 2021.", "\"One of my best students in my teaching career.\"": "«من أفضل طلابي في مسيرتي التعليمية.»", "From a letter by mathematics teacher Alan Paganelli, Brazilian Islamic School, February 2023. It describes my discipline, my questions until I understand deeply, and my effort to help younger students.": "من رسالة الأستاذ ألان باغانيلّي، مدرّس الرياضيات في المدرسة الإسلامية البرازيلية، فبراير 2023. تصف انضباطي، وأسئلتي حتى أفهم بعمق، وجهدي في مساعدة الطلاب الأصغر.", "Read the letter": "اقرأ الرسالة", "Let's build something.": "لنبنِ شيئاً معاً.", "I'm looking for a Summer 2027 internship in engineering or design. LinkedIn is the fastest way to reach me.": "أبحث عن تدريب صيف 2027 في الهندسة أو التصميم. لينكدإن أسرع طريق للتواصل معي.", "Download CV": "تحميل السيرة الذاتية", "Locked.": "تم القفل.", "Error is almost zero.": "الخطأ شبه معدوم.", "My CV is being finalized. LinkedIn has my full details for now.": "سيرتي الذاتية قيد الإعداد. يمكنك الاطلاع على تفاصيلي كاملة في لينكدإن حالياً.", "TITLE": "محمد إياد دبور | مهندس حاسوب ومصمم"}, "tr": {"Story": "Hikâye", "Experience": "Deneyim", "Projects": "Projeler", "Design": "Tasarım", "Certificates": "Sertifikalar", "Contact": "İletişim", "Computer Engineering student and graphic designer": "Bilgisayar Mühendisliği öğrencisi ve grafik tasarımcı", "Brazilian of Palestinian roots, building embedded and web systems at Karabük University, and designing the brands around them.": "Filistin kökenli bir Brezilyalı olarak Karabük Üniversitesi'nde gömülü ve web sistemleri geliştiriyor, çevresindeki markaları tasarlıyorum.", "View my work": "Çalışmalarımı gör", "Open to a Summer 2027 internship": "2027 yaz stajına açığım", "Karabük University, year 3": "Karabük Üniversitesi, 3. sınıf", "Move your cursor here. My turret does this 140+ times a second.": "İmleci buraya getirin. Taretim bunu saniyede 140'tan fazla kez yapar.", "GPA out of 4.00": "4,00 üzerinden GPA", "Languages, all fluent": "Diller, hepsi akıcı", "Expected graduation": "Beklenen mezuniyet", "Summer internship goal": "Yaz stajı hedefi", "My story": "Hikâyem", "Several countries' worth of change, one steady habit: listen to what people need, then build it.": "Birçok ülkelik değişim, tek bir sabit alışkanlık: insanların neye ihtiyaç duyduğunu dinlemek, sonra onu inşa etmek.", "Outside the house it was one life. Inside it was another. Both were mine.": "Evin dışında bir hayat vardı, içinde bir başkası. İkisi de benimdi.", "I grew up holding two languages and two worlds at once, and they changed every few years. That taught me to adapt fast, explain the same idea in different ways, and stay calm when the ground moves. It's the habit I bring to engineering and to design.": "İki dili ve iki dünyayı aynı anda taşıyarak büyüdüm ve bunlar birkaç yılda bir değişti. Bu bana hızlı uyum sağlamayı, aynı fikri farklı şekillerde anlatmayı ve zemin kayarken sakin kalmayı öğretti. Mühendisliğe ve tasarıma taşıdığım alışkanlık bu.", "Roots": "Kökler", "My family is from Khan Younis in Palestine, a part of me no change of address ever touched.": "Ailem Filistin'deki Han Yunus'tan; adres değişikliklerinin dokunamadığı bir yanım.", "Until 2013": "2013'e kadar", "Born in Libya": "Libya'da doğdum", "My first years, in a home where my father, a computer engineer, was always building or fixing something.": "İlk yıllarım, bilgisayar mühendisi babamın sürekli bir şeyler inşa ettiği ya da tamir ettiği bir evde geçti.", "2013 to 2023": "2013 – 2023", "São Paulo, Brazil": "São Paulo, Brezilya", "I grew up in Brazil and graduated from the Escola Islâmica Brasileira. I took my first IT job while still in high school.": "Brezilya'da büyüdüm ve Escola Islâmica Brasileira'dan mezun oldum. İlk BT işime daha lisedeyken başladım.", "I came to Karabük, spent a year learning Turkish, and chose Türkiye for its strong religious community and technological momentum.": "Karabük'e geldim, bir yıl Türkçe öğrendim ve güçlü dinî topluluğu ile teknolojik ivmesi nedeniyle Türkiye'yi seçtim.", "Now": "Şimdi", "Engineering, design and service": "Mühendislik, tasarım ve hizmet", "Studying Computer Engineering, designing brands, and serving on the student team of the Palestinian Students Union.": "Bilgisayar Mühendisliği okuyor, markalar tasarlıyor ve Filistinli Öğrenciler Birliği'nin öğrenci ekibinde görev yapıyorum.", "Fluent": "Akıcı", "Education and experience": "Eğitim ve deneyim", "Where I study, where I've worked, and where I serve.": "Nerede okuyorum, nerede çalıştım, nerede hizmet ediyorum.", "2024 to present": "2024 – günümüz", "B.Sc. Computer Engineering, Karabük University": "Bilgisayar Mühendisliği Lisans, Karabük Üniversitesi", "Third year, GPA 3.59/4.00. Database Systems was the course that clicked, and it led to my Oracle certification. Working in C, Java, SQL, PHP and JavaScript.": "Üçüncü sınıf, GPA 3,59/4,00. Veritabanı Sistemleri beni en çok etkileyen dersti ve Oracle sertifikama yol açtı. C, Java, SQL, PHP ve JavaScript ile çalışıyorum.", "Present": "Şu anda", "Student team, Palestinian Students Union": "Öğrenci ekibi, Filistinli Öğrenciler Birliği", "On the responsible team helping Palestinian students with university life.": "Filistinli öğrencilere üniversite hayatında yardımcı olan sorumlu ekipte yer alıyorum.", "During high school": "Lise döneminde", "IT department, MKM Salgados": "BT departmanı, MKM Salgados", "My first professional work, in São Paulo.": "São Paulo'daki ilk profesyonel işim.", "Volunteering": "Gönüllülük", "IHH humanitarian relief": "IHH insani yardım", "Volunteer with the foundation.": "Vakıfta gönüllü.", "April 2021": "Nisan 2021", "Debater for Brazil, Qatar International Schools Debating Championship": "Brezilya adına münazır, Katar Uluslararası Okullar Münazara Şampiyonası", "Represented Brazil twice. The certificate from the Fifth Championship is below.": "Brezilya'yı iki kez temsil ettim. Beşinci Şampiyona'nın sertifikası aşağıda.", "Engineering projects": "Mühendislik projeleri", "One in development, one delivered. Both built end to end.": "Biri geliştirme aşamasında, biri teslim edildi. İkisi de baştan sona benim yaptığım işler.", "Project Sentinel": "Sentinel Projesi", "Autonomous air-defense turret for Teknofest. Under active development.": "Teknofest için otonom hava savunma tareti. Aktif geliştirme aşamasında.", "A closed-loop turret that detects, classifies and hits balloon targets standing in for F-16s, helicopters, missiles and drones at 5, 10 and 15 metres, inside a 60 cm envelope. Developed under Vitality Technologies.": "F-16, helikopter, füze ve dronları temsil eden balon hedefleri 5, 10 ve 15 metrede tespit eden, sınıflandıran ve vuran, 60 cm'lik bir hacme sığan kapalı döngülü bir tare. Vitality Technologies bünyesinde geliştirildi.", "Global-shutter camera": "Global shutter kamera", "Vision": "Görüntü", "Custom YOLOv8 on an RTX 4060 at 140 to 200+ FPS, HSV friend-or-foe filtering, lead-angle calculation.": "RTX 4060 üzerinde 140–200+ FPS çalışan özel YOLOv8, HSV ile dost-düşman ayrımı ve öncü açı hesabı.", "Real-time control": "Gerçek zamanlı kontrol", "Core 0 parses serial and the emergency stop. Core 1 makes jitter-free STEP/DIR pulses and times the firing MOSFET.": "Çekirdek 0 seri haberleşmeyi ve acil durdurmayı işler. Çekirdek 1 titreşimsiz STEP/DIR darbeleri üretir ve ateşleme MOSFET'inin zamanlamasını yapar.", "Motion": "Hareket", "Closed-loop steppers with 3:1 GT2 reductions. Tilt covers 0 to 60 degrees.": "3:1 GT2 redüksiyonlu kapalı döngülü step motorlar. Eğim 0 ile 60 derece arasını kapsar.", "Fabrication": "Üretim", "SolidWorks design, printed on a Creality K1C in ASA, PETG and PA-CF.": "SolidWorks ile tasarlandı, Creality K1C üzerinde ASA, PETG ve PA-CF ile basıldı.", "CAD renders and test footage will be added after testing.": "CAD görselleri ve test görüntüleri testlerden sonra eklenecek.", "University project: airline booking platform with its own identity.": "Üniversite projesi: kendi kimliğine sahip havayolu rezervasyon platformu.", "The whole passenger journey: flight search, seat selection, boarding pass with QR code, then a verified review. Vanilla PHP and MySQL, no frontend framework.": "Yolcunun tüm yolculuğu: uçuş arama, koltuk seçimi, QR kodlu biniş kartı ve doğrulanmış değerlendirme. Saf PHP ve MySQL, ön yüz çatısı yok.", "Database": "Veritabanı", "10+ normalized tables with foreign keys and cascading deletes.": "Yabancı anahtarlar ve basamaklı silme ile 10'dan fazla normalleştirilmiş tablo.", "Verified reviews": "Doğrulanmış yorumlar", "A SQL JOIN confirms the user flew the flight before rating it.": "Bir SQL JOIN, kullanıcının puan vermeden önce o uçuşta bulunduğunu doğrular.", "Interface": "Arayüz", "Persistent light and dark mode, custom star ratings and dropdowns, admin panels for fleet, schedules and roles.": "Kalıcı açık ve koyu mod, özel yıldız puanlama ve açılır menüler, filo, tarife ve rol yönetimi için yönetici panelleri.", "Graphic design": "Grafik tasarım", "It began as a hobby and became a profession because I like turning someone's need into something they can see.": "Bir hobi olarak başladı, birinin ihtiyacını görebileceği bir şeye dönüştürmeyi sevdiğim için mesleğe dönüştü.", "Brand colors and logo": "Marka renkleri ve logo", "Airline logo and palette": "Havayolu logosu ve paleti", "Minimal logo for a robotics team": "Bir robotik ekibi için minimal logo", "KBÜFEST poster": "KBÜFEST afişi", "Event ad built to catch attention": "Dikkat çekmek için tasarlanmış etkinlik reklamı", "See the full portfolio on Behance": "Tüm portföyü Behance'te gör", "Certificates and references": "Sertifikalar ve referanslar", "Each one opens the original document.": "Her biri orijinal belgeyi açar.", "Database Design and Programming with SQL": "SQL ile Veritabanı Tasarımı ve Programlama", "Oracle Academy at Karabük University. All coursework completed, 26 June 2026.": "Karabük Üniversitesi'nde Oracle Academy. Tüm dersler 26 Haziran 2026'da tamamlandı.", "View PDF": "PDF'yi gör", "Front-end and UX Development, 80 hours": "Ön Yüz ve UX Geliştirme, 80 saat", "Toti, Brazil. HTML5, CSS3, JavaScript, Git and UX, August to November 2020.": "Toti, Brezilya. HTML5, CSS3, JavaScript, Git ve UX, Ağustos – Kasım 2020.", "Fifth International Schools Debating Championship": "Beşinci Uluslararası Okullar Münazara Şampiyonası", "QatarDebate Center. Debater on Brazil's national team, 3 to 7 April 2021.": "QatarDebate Center. Brezilya milli takımında münazır, 3–7 Nisan 2021.", "\"One of my best students in my teaching career.\"": "“Öğretmenlik kariyerimdeki en iyi öğrencilerimden biri.”", "From a letter by mathematics teacher Alan Paganelli, Brazilian Islamic School, February 2023. It describes my discipline, my questions until I understand deeply, and my effort to help younger students.": "Matematik öğretmeni Alan Paganelli'nin Brazilian Islamic School'dan Şubat 2023 tarihli mektubundan. Disiplinimi, derinlemesine anlayana kadar sorularımı ve daha küçük öğrencilere yardım çabamı anlatıyor.", "Read the letter": "Mektubu oku", "Let's build something.": "Birlikte bir şeyler inşa edelim.", "I'm looking for a Summer 2027 internship in engineering or design. LinkedIn is the fastest way to reach me.": "2027 yazı için mühendislik veya tasarım alanında staj arıyorum. Bana ulaşmanın en hızlı yolu LinkedIn.", "Download CV": "CV'yi indir", "Locked.": "Kilitlendi.", "Error is almost zero.": "Hata neredeyse sıfır.", "My CV is being finalized. LinkedIn has my full details for now.": "CV'm hazırlanıyor. Şimdilik tüm bilgilerim LinkedIn'de.", "TITLE": "Mohamed E. Dabour | Bilgisayar Mühendisi ve Tasarımcı"}};
+var LANG='en',ORIG=document.title;
+function tr(k){return LANG!=='en'&&D[LANG]&&D[LANG][k]||k}
+function norm(x){return x.replace(/\s+/g,' ').trim()}
+function setLang(l){LANG=l;var h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';
+ var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;
+ while(n=w.nextNode()){var pn=n.parentNode;if(!pn||/^(SCRIPT|STYLE)$/.test(pn.nodeName)||pn.id==='hi')continue;
+  if(n._en===undefined){var t=norm(n.nodeValue);n._en=t}
+  if(!n._en)continue;var tx=tr(n._en),a=n.nodeValue.match(/^\s*/)[0],b=n.nodeValue.match(/\s*$/)[0];n.nodeValue=a+tx+b}
+ document.title=LANG==='en'?ORIG:D[LANG].TITLE;
+ document.querySelectorAll('.lsw button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.l===l)});
+ try{localStorage.setItem('lang',l)}catch(e){}}
+var busy=false;
+function swapLang(l){
+ if(l===LANG||busy)return;
+ if(red){setLang(l);return}
+ busy=true;var h=document.documentElement,dx=(l==='ar'?26:-26);
+ document.querySelectorAll('.lsw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
+ h.style.setProperty('--dx',dx+'px');h.style.setProperty('--t','.28s');h.classList.add('lt','lo');
+ setTimeout(function(){
+  var ratio=scrollY/Math.max(1,h.scrollHeight-innerHeight);
+  h.classList.add('nt');h.style.setProperty('--dx',(-dx)+'px');
+  setLang(l);
+  scrollTo({top:ratio*(h.scrollHeight-innerHeight),behavior:'instant'});
+  if(typeof sc==='function')sc();
+  void h.offsetWidth;h.classList.remove('nt');h.style.setProperty('--t','.6s');
+  requestAnimationFrame(function(){h.classList.remove('lo')});
+  setTimeout(function(){h.classList.remove('lt');busy=false},680);
+ },300);
+}
+document.querySelectorAll('.lsw button').forEach(function(x){x.addEventListener('click',function(){swapLang(x.dataset.l)})});
+var st='';try{st=localStorage.getItem('lang')||''}catch(e){}
+if(!st){var nl=(navigator.language||'en').slice(0,2);st=/^(pt|ar|tr)$/.test(nl)?nl:'en'}
+setLang(st);
+var CV='assets/Mohamed_D_CV.docx';
+document.querySelectorAll('[data-cv]').forEach(function(a){a.addEventListener('click',function(e){
+ if(location.protocol==='file:')return;e.preventDefault();
+ fetch(CV,{method:'HEAD'}).then(function(r){if(!r.ok)throw 0;var d=document.createElement('a');d.href=CV;d.download='Mohamed_D_CV.docx';document.body.appendChild(d);d.click();d.remove()})
+ .catch(function(){document.getElementById('cvmsg').textContent=tr('My CV is being finalized. LinkedIn has my full details for now.');document.getElementById('contact').scrollIntoView()})})});
+</script>
 </body>
-
 </html>
